@@ -48,8 +48,8 @@ const Heroku = require("heroku-client");
 const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
 //const autobio = process.env.AUTOBIO || 'TRUE';
-const botname = process.env.BOTNAME || 'DREADED BOT';
-const antibot = process.env.ANTIBOT || 'TRUE';
+const botname = process.env.BOTNAME || 'CROWN AI';
+const antibot = process.env.ANTIBOT || 'FALSE';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
     const args = body.trim().split(/ +/).slice(1);
@@ -80,15 +80,15 @@ const antibot = process.env.ANTIBOT || 'TRUE';
     };
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
-    const author = process.env.STICKER_AUTHOR || 'fortunatus';
-    const packname = process.env.STICKER_PACKNAME || 'dreaded';
-const dev = process.env.DEV || '254114018035'
+    const author = process.env.STICKER_AUTHOR ||'𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏';
+    const packname = process.env.STICKER_PACKNAME || 'crown';
+const dev = process.env.DEV || '923195832822'
 
 const menu = process.env.MENU_TYPE || 'LINK';
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
-    const autoread = process.env.AUTOREAD || 'TRUE';
+    const autoread = process.env.AUTOREAD || 'FALSE';
     const badword = bad.split(",");
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
     // Group
