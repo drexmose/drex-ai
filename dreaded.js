@@ -342,7 +342,7 @@ if (antilink === 'TRUE' && antilinkall === 'TRUE' && body.includes('http') && !O
         case "menu":
 let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯╭──────────────
-┃✯│ Owner : 𝐓𝐡𝐞𝐞 𝐂𝐫𝐨𝐰𝐧
+┃✯│ Owner : 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏
 ┃✯│ User : ${m.pushName} 
 ┃✯│ Platform : Linux
 ┃✯│Speed: ${dreadedspeed.toFixed(4)} 𝐦𝐬
