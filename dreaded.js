@@ -340,7 +340,7 @@ if (antilink === 'TRUE' && antilinkall === 'TRUE' && body.includes('http') && !O
       switch (command) {
       case "help":
         case "menu":
-let cap = ;`╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
+let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯╭──────────────
 ┃✯│ Owner : 𝐓𝐡𝐞𝐞 𝐂𝐫𝐨𝐰𝐧
 ┃✯│ User : ${m.pushName} 
