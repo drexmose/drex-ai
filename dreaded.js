@@ -456,7 +456,7 @@ client.sendMessage(m.chat, {
                                 title: `𝐂𝐑𝐎𝐖𝐍-𝐀𝐈`,
                                 body: `${runtime(process.uptime())}`,
                                 thumbnail: fs.readFileSync('./IMG-20231124-WA0062(1).jpg'),
-                                sourceUrl: `https://wa.me/923195832822ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏 +Nihost+Bot+Mkuu+🥲`,
+                                sourceUrl: 'https://wa.me/923195832822ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏 +Nihostie+Bot+Mkuu+🥲',
                                 mediaType: 1,
                                 renderLargerThumbnail: true
                             }
