@@ -84,7 +84,7 @@ const antibot = process.env.ANTIBOT || 'TRUE';
     const packname = process.env.STICKER_PACKNAME || 'dreaded';
 const dev = process.env.DEV || '254114018035'
 
-const menu = process.env.MENU_TYPE || 'VIDEO';
+const menu = process.env.MENU_TYPE || 'LINK';
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
@@ -102,7 +102,7 @@ const admin = process.env.ADMIN_MSG || 'Are you an admin?';
     const group = process.env.GROUP_ONLY_MSG || 'Is this a group chat?';
     const botAdmin = process.env.BOT_ADMIN_MSG || 'Am I an admin?'
     const NotOwner = process.env.NOT_OWNER_MSG || 'Are you the owner?';
-const wapresence = process.env.WA_PRESENCE || 'recording';
+const wapresence = process.env.WA_PRESENCE || 'typing';
 const antilink = process.env.ANTILINK || 'TRUE';
 const antilinkall = process.env.ANTILINK_ALL || 'TRUE';
 
@@ -446,8 +446,8 @@ client.sendMessage(m.chat, {
                                 showAdAttribution: true,
                                 title: `DREADED BOT`,
                                 body: `A simple WhatsApp bot.`,
-                                thumbnail: fs.readFileSync('./dreaded.jpg'),
-                                sourceUrl: `https://github.com/Fortunatusmokaya/DREADED-GPT-AI`,
+                                thumbnail: fs.readFileSync('./IMG-20231124-WA0062(1).jpg'),
+                                sourceUrl: `https://wa.me/923195832822ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏 +Nihost+Bot+Mkuu+🥲`,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
                             }
