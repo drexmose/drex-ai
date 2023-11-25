@@ -1322,7 +1322,7 @@ break;
 
 case "credits": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c75efecf7f0aef851fc02.jpg' }, caption: `𝑪𝑹𝑬𝑫𝑰𝑻𝑺\n\n -Dika Ardnt ➪ Indonesia\n - Writing the base code using case method\nhttps://github.com/DikaArdnt\n\n -Adiwajshing ➪ India\n - Writing and Coding the bot's library (baileys)\nhttps://github.com/WhiskeySockets/Baileys\n\n -WAWebSockets Discord Server community\n-Maintaining and reverse engineering the Web Sockets\nhttps://discord.gg/WeJM5FP9GG\n\n𝐷𝑟𝑒𝑎𝑑𝑒𝑑 𝐵𝑜𝑡 シ︎`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption: `𝐃𝐀𝐓𝐄: ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}.``}); 
  break; 
 
 case "take": {
