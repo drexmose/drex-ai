@@ -1322,7 +1322,7 @@ break;
 
 case "system": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption: 𝐒𝐏𝐄𝐄𝐃:${runtime(process.uptime())}\n\n𝐃𝐀𝐓𝐄: ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}. `}); 
+              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption: 𝐒𝐏𝐄𝐄𝐃:${runtime(process.uptime())}\n\n𝐃𝐀𝐓𝐄: ${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}.`}); 
  break; 
 
 case "take": {
