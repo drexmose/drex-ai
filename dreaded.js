@@ -169,9 +169,9 @@ function _0x11cc() {
         'split',
         '84AXXWgJ',
         '4435424UJQIXb',
-        'y\x20Dreaded\x20',
+        'y\x20CROWN\x20',
         'TRUE',
-        '𝘵𝘪𝘉𝘰𝘵:\x0a\x0a@',
+        'tibot:\x0a\x0a@',
         '\x20as\x20a\x20bot.',
         '2LGBzpD',
         'sendMessag',
@@ -192,7 +192,7 @@ function _0x11cc() {
         '184473FwtnYZ',
         '18szWhmE',
         'startsWith',
-        '𝘋𝘳𝘦𝘢𝘥𝘦𝘥\x20𝘈𝘯',
+        '𝐂𝐑𝐎𝐖𝐍-𝐀𝐈\x20an',
         '376590puyzhN',
         'key'
     ];
@@ -283,7 +283,7 @@ const response = await openai.createChatCompletion({
 if (badwordkick === 'TRUE' && isBotAdmin && !isAdmin && body && (new RegExp('\\b' + badword.join('\\b|\\b') + '\\b')).test(body.toLowerCase())) {
             
      client.groupParticipantsUpdate(from, [sender], 'remove')
-            reply("Removed\n\nBot Owner Prohibits Use Of Bad Words In The Bot Presence!")
+            reply("Au revoir.\n\nBot owner hates usage of bad words!")
             
         
                                                    }
@@ -300,7 +300,7 @@ if (badwordkick === 'TRUE' && isBotAdmin && !isAdmin && body && (new RegExp('\\b
                    participant: kid 
                 } 
              }).then(() => client.groupParticipantsUpdate(m.chat, [kid], 'remove')); 
- client.sendMessage(m.chat, {text:`Removed:\n\n@${kid.split("@")[0]}, sending group links is prohibited by Bot Owner!`, contextInfo:{mentionedJid:[kid]}}, {quoted:m}); 
+ client.sendMessage(m.chat, {text:`Adiós:\n\n@${kid.split("@")[0]}, sending group links is prohibited here!`, contextInfo:{mentionedJid:[kid]}}, {quoted:m}); 
        }   
 
 if (antilink === 'TRUE' && antilinkall === 'TRUE' && body.includes('http') && !Owner && isBotAdmin && !isAdmin && m.isGroup) { 
@@ -316,14 +316,14 @@ if (antilink === 'TRUE' && antilinkall === 'TRUE' && body.includes('http') && !O
                    participant: ki
                 } 
              }).then(() => client.groupParticipantsUpdate(m.chat, [ki], 'remove')); 
- client.sendMessage(m.chat, {text:`Removed:\n\n@${ki.split("@")[0]}, sending links is prohibited by Bot Owner!`, contextInfo:{mentionedJid:[ki]}}, {quoted:m}); 
+ client.sendMessage(m.chat, {text:`Auf wiedersehen:\n\n@${ki.split("@")[0]}, sending links is prohibited in this group!`, contextInfo:{mentionedJid:[ki]}}, {quoted:m}); 
        }   
   
   
   
 
     if (cmd && !m.isGroup) {
-      console.log(chalk.black(chalk.bgWhite("[ DREADED-AI ]")), color(argsLog, "turquoise"), chalk.magenta("From"), chalk.green(pushname), chalk.yellow(`[ ${m.sender.replace("@s.whatsapp.net", "")} ]`));
+      console.log(chalk.black(chalk.bgWhite("[ CROWN-AI ]")), color(argsLog, "turquoise"), chalk.magenta("From"), chalk.green(pushname), chalk.yellow(`[ ${m.sender.replace("@s.whatsapp.net", "")} ]`));
     } else if (cmd && m.isGroup) {
       console.log(
         chalk.black(chalk.bgWhite("[ LOGS ]")),
@@ -403,7 +403,6 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯│Compile-c++
 ┃✯│Sirm
 ┃✯│Ig
-┃✯│Twitter
 ┃✯│Owner
 ┃✯│Vars
 ┃✯│Mail
@@ -436,7 +435,7 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 if (menu === 'VIDEO') {
 
                    client.sendMessage(m.chat, {
-                        video: fs.readFileSync('./menu.mp4'),
+                        video: fs.readFileSync('./VID-20231123-WA0214.mp4'),
                         caption: cap,
                         gifPlayback: true
                     }, {
