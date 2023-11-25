@@ -564,7 +564,7 @@ function _0x2de4() {
         '64311OINjak',
         'catch',
         'e\x20text.\x20Th',
-        '\x20of\x20Google',
+        '\x20of\x20𝐒𝐢𝐫𝐦',
         'is\x20AI\x20work',
         '1832596QZCVhJ',
         '\x20and\x20Chrom',
