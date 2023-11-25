@@ -496,7 +496,7 @@ reply(resultt.stderr)
 
 break;
 
-case "ai":
+case "mkuu":
 const _0x3cfb2e = _0x5913;
 (function (_0x573879, _0x548047) {
     const _0x197f5a = _0x5913, _0x32c565 = _0x573879();
