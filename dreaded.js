@@ -568,7 +568,7 @@ function _0x2de4() {
         '\x20of\x20its developer 𝐒𝐢𝐫𝐦',
         'is\x20AI\x20work',
         '1832596QZCVhJ',
-        '\x20and\x20Chrom',
+        '\x20and\x20Googl',
         'AgaVJ',
         '6jOniet',
         '𝐂𝐑𝐎𝐖𝐍-𝐀𝐈',
