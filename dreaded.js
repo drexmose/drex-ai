@@ -403,7 +403,7 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯│Compile-c
 ┃✯│Compile-c++
 ┃✯│Sirm
-┃✯│Ig
+┃✯│Ping
 ┃✯│Owner
 ┃✯│List
 ┃✯│Mail
@@ -1320,9 +1320,9 @@ let vaa = `𝟏𝐒𝐢𝐫𝐦➣ 𝐆𝐞𝐭 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™
 reply(vaa)
 break;
 
-case "system": 
+case "speed": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption:`𝐂𝐑𝐎𝐖𝐍-𝐀𝐈\n\n𝐒𝐏𝐄𝐄𝐃:${runtime(process.uptime())}\n\n𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption:`𝐂𝐑𝐎𝐖𝐍-𝐀𝐈\n\n𝐒𝐏𝐄𝐄𝐃:${runtime(process.uptime())}`}); 
  break; 
 
 case "take": {
