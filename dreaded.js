@@ -390,7 +390,8 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯│Lyrics
 ┃✯│Movie
 ┃✯│Mix
-┃✯│Ai-img
+┃✯│Ai-img                                                                                                                                                                                                                                                                                     
+┃✯│Mkuu
 ┃✯│G
 ┃✯│DP
 ┃✯│Speed
@@ -564,7 +565,7 @@ function _0x2de4() {
         '64311OINjak',
         'catch',
         'e\x20text.\x20Th',
-        '\x20of\x20𝐒𝐢𝐫𝐦',
+        '\x20of\x20its developer 𝐒𝐢𝐫𝐦',
         'is\x20AI\x20work',
         '1832596QZCVhJ',
         '\x20and\x20Chrom',
