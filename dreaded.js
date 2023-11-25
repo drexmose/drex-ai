@@ -1322,7 +1322,7 @@ break;
 
 case "credits": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption: `𝐃𝐀𝐓𝐄: `${runtime(process.uptime())}`; 
+              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption: `𝐃𝐀𝐓𝐄:${runtime(process.uptime())}`; 
  break; 
 
 case "take": {
