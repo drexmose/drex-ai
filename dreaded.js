@@ -1322,7 +1322,7 @@ break;
 
 case "credits": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption: `𝐃𝐀𝐓𝐄: `${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}.`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption: `𝐃𝐀𝐓𝐄: `C ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}.`}); 
  break; 
 
 case "take": {
