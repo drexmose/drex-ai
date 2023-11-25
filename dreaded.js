@@ -1320,9 +1320,9 @@ let vaa = `𝟏𝐒𝐢𝐫𝐦➣ 𝐆𝐞𝐭 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™
 reply(vaa)
 break;
 
-case "credits": 
+case "system": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption: `𝐃𝐀𝐓𝐄:${runtime(process.uptime())}`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption: 𝐒𝐏𝐄𝐄𝐃:${runtime(process.uptime())}\n\n𝐃𝐀𝐓𝐄: ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}. `}); 
  break; 
 
 case "take": {
