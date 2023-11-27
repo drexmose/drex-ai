@@ -84,7 +84,7 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     const packname = process.env.STICKER_PACKNAME || 'crown';
 const dev = process.env.DEV || '923195832822'
 
-const menu = process.env.MENU_TYPE || 'LINK';
+const menu = process.env.MENU_TYPE || 'IMAGE';
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
