@@ -84,7 +84,7 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     const packname = process.env.STICKER_PACKNAME || 'crown';
 const dev = process.env.DEV || '923195832822'
 
-const menu = process.env.MENU_TYPE || 'VIDEO';
+const menu = process.env.MENU_TYPE || 'IMAGE';
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
@@ -446,7 +446,7 @@ if (menu === 'VIDEO') {
 client.sendMessage(from, { text: cap}, {quoted: m})
 
 } else if (menu === 'IMAGE') {
-client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
+client.sendMessage(m.chat, { image: { url: '20231127_102208.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
 } else if (menu === 'LINK') {
 client.sendMessage(m.chat, {
                         text: cap,
@@ -455,7 +455,7 @@ client.sendMessage(m.chat, {
                                 showAdAttribution: true,
                                 title: `𝐂𝐑𝐎𝐖𝐍-𝐀𝐈`,
                                 body: `${runtime(process.uptime())}`,
-                                thumbnail: fs.readFileSync('./IMG-20231124-WA0062(1).jpg'),
+                                thumbnail: fs.readFileSync('./20231127_102208.jpg'),
                                 sourceUrl: 'https://wa.me/923195832822?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
                                 mediaType: 1,
                                 renderLargerThumbnail: true
