@@ -84,7 +84,7 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     const packname = process.env.STICKER_PACKNAME || 'crown';
 const dev = process.env.DEV || '923195832822'
 
-const menu = process.env.MENU_TYPE || 'IMAGE';
+const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
@@ -436,7 +436,7 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 if (menu === 'VIDEO') {
 
                    client.sendMessage(m.chat, {
-                        video: fs.readFileSync('./VID-20231122-WA0009.mp4'),
+                        video: fs.readFileSync('./VID-20231128-WA0165.mp4'),
                         caption: cap,
                         gifPlayback: true
                     }, {
