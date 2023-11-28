@@ -1701,7 +1701,7 @@ break;
                 client.sendMessage(
                     from, {
                         video: fs.readFileSync(`./${randomName}`),
-                        caption: `${titleYt}`,
+                        caption: `𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 𝐂𝐫𝐨𝐰𝐧-𝐀𝐈`,
                     }, {
                         quoted: m
                     }
