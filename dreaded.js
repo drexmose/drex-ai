@@ -348,7 +348,7 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯│Speed: ${dreadedspeed.toFixed(4)} 𝐦𝐬
 ┃✯│Available RAM : 34 GB of 62 GB
 ┃✯│Runtime: ${runtime(process.uptime())}
-┃✯│Time:${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })}${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}
+┃✯│Time:${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}
 ┃✯│𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 𝐯𝟔.𝟎.𝟓
 ┃✯│
 ┃✯│
