@@ -84,7 +84,7 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     const packname = process.env.STICKER_PACKNAME || 'crown';
 const dev = process.env.DEV || '923195832822'
 
-const menu = process.env.MENU_TYPE || 'VIDEO';
+const menu = process.env.MENU_TYPE || 'LINK';
  const DevDreaded = dev.split(",");
     const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
    const bad = process.env.BAD_WORD || 'fuck';
@@ -454,7 +454,7 @@ client.sendMessage(m.chat, {
                             externalAdReply: {
                                 showAdAttribution: true,
                                 title: `𝐂𝐑𝐎𝐖𝐍-𝐀𝐈`,
-                                body: `${runtime(process.uptime())}`,
+                                body: `${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })}`,
                                 thumbnail: fs.readFileSync('./IMG-20231127-WA0153.jpg'),
                                 sourceUrl: 'https://wa.me/923195832822?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
                                 mediaType: 1,
