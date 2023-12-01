@@ -1322,7 +1322,7 @@ break;
 
 case "system": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eImS3eF.jpeg' }, caption:`BOT NAME: 𝐂𝐑𝐎𝐖𝐍-𝐀𝐈\n\n𝐒𝐏𝐄𝐄𝐃:${dreadedspeed.toFixed(4)} 𝐦𝐬\n\nRUNTIME: ${runtime(process.uptime())}`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eImS3eF.jpeg' }, caption:`𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐂𝐑𝐎𝐖𝐍-𝐀𝐈\n\n𝐒𝐏𝐄𝐄𝐃: ${dreadedspeed.toFixed(4)} 𝐦𝐬\n\nRUNTIME: ${runtime(process.uptime())}`}); 
  break; 
 
 case "take": {
