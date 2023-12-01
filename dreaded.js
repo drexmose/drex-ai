@@ -1320,9 +1320,9 @@ let vaa = `𝟏𝐒𝐢𝐫𝐦➣ 𝐆𝐞𝐭 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™
 reply(vaa)
 break;
 
-case "speed": 
+case "system": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eXo1v0R.jpeg' }, caption:`𝐂𝐑𝐎𝐖𝐍-𝐀𝐈\n\n𝐒𝐏𝐄𝐄𝐃:${dreadedspeed.toFixed(4)} 𝐦𝐬\n\nruntime: ${runtime(process.uptime())}`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eImS3eF.jpeg' }, caption:`BOT NAME: 𝐂𝐑𝐎𝐖𝐍-𝐀𝐈\n\n𝐒𝐏𝐄𝐄𝐃:${dreadedspeed.toFixed(4)} 𝐦𝐬\n\nRUNTIME: ${runtime(process.uptime())}`}); 
  break; 
 
 case "take": {
