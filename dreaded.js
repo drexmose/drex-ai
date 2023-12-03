@@ -140,6 +140,9 @@ if (wapresence === 'recording' && !m.isGroup) {
              client.readMessages([m.key])
     }
 
+   if (autobio === 'TRUE'){ 
+ client.updateProfileStatus(`${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}.`).catch(_ =>
+  }
       if (itsMe && mek.key.id.startsWith("BAE5") && mek.key.id.length === 16 && !m.isGroup) return;
 
 
