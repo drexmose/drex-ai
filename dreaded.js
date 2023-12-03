@@ -1977,7 +1977,7 @@ case "getvar":
   
  break;
  
-        case "gpt": case "gpt": 
+        case "gpt": case "g": 
           
 
             if (!text) return reply("Hello am 𝐂𝐑𝐎𝐖𝐍 an Ai developed by 𝐒𝐢𝐫𝐦, how can I help you today?");
@@ -1988,11 +1988,11 @@ case "getvar":
 
             });
 
-            const gpt = new OpenAIApi(configuration);
+            const g = new OpenAIApi(configuration);
 
             try {
 
-const response = await gpt.createChatCompletion({
+const response = await g.createChatCompletion({
 
           model: "gpt-3.5-turbo",
 
@@ -2024,12 +2024,12 @@ const response = await gpt.createChatCompletion({
 
 break;
 /*
-case "ai":
+case "g":
 
 const {
   Configuration,
   OpenAIApi
-} = require("gpt");
+} = require("g");
 
 // Function to save a conversation to the database
 async function saveConversation(text) {
@@ -2041,7 +2041,7 @@ async function getConversation() {
   return await db.get("conversation") || [];
 }
 
-// Handler for the "gpt" or "gpt" case
+// Handler for the "gpt" or "g" case
 async function handleGPTMessage(text, m) {
   if (!text) return m.reply("Hello am 𝐂𝐑𝐎𝐖𝐍 an Ai developed by 𝐒𝐢𝐫𝐦, how can I help you today?");
 
