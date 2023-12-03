@@ -347,7 +347,7 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯│Speed: ${dreadedspeed.toFixed(4)} 𝐦𝐬
 ┃✯│Available RAM : 34 GB of 62 GB
 ┃✯│Runtime: ${runtime(process.uptime())}
-┃✯│𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 𝐯𝟔.𝟎.𝟓
+┃✯│𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 𝐯𝟔.𝟎.𝟕
 ┃✯│
 ┃✯│
 ┃✯│▎▍▌▌▉▏▎▌▉▐▏▌
@@ -356,61 +356,29 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯│
 ┃╰─────
 ╰─────────────────❍
-╭════〘 𝗢𝗪𝗡𝗘𝗥 〙════⊷❍
+╭══〘 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 〙══⊷❍
 ▯╭────────────···▸
 ┴✯│
-┃✯│Admin
-┃✯│Broadcast
-┃✯│Join
-┃✯│Botpp
-┃✯│>
-┃✯│Block
-┃✯│Kill
-┃✯│Unblock
-┃✯│Setvar
-┃✯│Getvar
-┬✯│
-│╰─────────────────❍
-╰══════════════════⊷❍
-
-╭════〘 𝗚𝗘𝗡𝗘𝗥𝗔𝗟 〙════⊷❍
-▯╭─────────────···▸
-┴✯│
-┃✯│System
-┃✯│Sticker
-┃✯│Toimg
-┃✯│Upload
-┃✯│Smeme
-┃✯│Ig
+┃✯│Video
 ┃✯│Play
+┃✯│Movie
+┃✯│Lyrics
 ┃✯│Whatsong
 ┃✯│Yts
-┃✯│Ytmp3 
 ┃✯│Ytmp4
-┃✯│Lyrics
-┃✯│Movie
-┃✯│Mix
-┃✯│Ai-img                                                                                                                                                                                                                                                                                     
-┃✯│Gpt
-┃✯│Crown
-┃✯│DP
-┃✯│Speed
-┃✯│Alive
-┃✯│Runtime
-┃✯│Enc
-┃✯│Compile-py
-┃✯│Compile-js
-┃✯│Compile-c
-┃✯│Compile-c++
-┃✯│Sirm
-┃✯│Ping
-┃✯│Owner
-┃✯│List
-┃✯│Mail
-┃✯│Inbox
 ┬✯│
-│╰─────────────────❍
-╭════〘 𝗔𝗗𝗠𝗜𝗡 〙════⊷❍
+│╰────────────────❍
+╰════════════════⊷❍
+╭════════〘 𝐀𝐈 〙═══⊷❍
+▯╭─────────────···▸
+┴✯│
+┃✯│Ai-img
+┃✯│Crown
+┃✯│G
+┃✯│Gpt                                                                                                                                                                                                                                                          
+┬✯│
+│╰────────────────❍
+╭════〘 𝐆𝐑𝐎𝐔𝐏 〙═══⊷❍
 ▯╭─────────────···▸
 ┃✯│Promote
 ┃✯│Demote
@@ -430,8 +398,43 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯│Tagall
 ┃✯│Hidetag
 ┃✯│Revoke
-┃✯╰───────────────❍
-╰════════════════⊷❍`;
+┃✯│Mute
+┃✯│Unmute
+┃✯╰─────────────❍
+╰══════════════⊷❍
+╭═══〘 𝐔𝐓𝐈𝐈𝐋𝐈𝐓𝐘 〙═⊷❍
+▯╭─────────────···▸
+┃✯│Owner
+┃✯│Sirm
+┃✯│System
+┃✯│Menu
+┃✯│List
+┃✯│Ping
+┃✯│Alive
+┃✯│Speed
+┃✯│Runtime
+┃✯│Smeme
+┃✯│Mix
+┃✯│Dp
+┃✯│Enc
+┃✯│Compile-py
+┃✯│Compile-js
+┃✯│Mail
+┃✯│Inbox
+✯╰───────────────❍
+╰═══════════════⊷❍
+╭════〘 𝐎𝐖𝐍𝐄𝐑  〙══⊷❍
+▯╭─────────────···▸
+┃✯│Admin
+┃✯│Broadcast
+┃✯│Join
+┃✯│Botpp
+┃✯│Block
+┃✯│>
+┃✯│Kill
+┃✯│Unblock
+✯╰───────────────❍
+╰═══════════════⊷❍`;
 
 if (menu === 'VIDEO') {
 
