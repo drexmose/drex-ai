@@ -104,7 +104,7 @@ const admin = process.env.ADMIN_MSG || '𝐅𝐚𝐢𝐥𝐮𝐫𝐞!!, you are 
     const NotOwner = process.env.NOT_OWNER_MSG || 'Lol you are not 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏';
 const wapresence = process.env.WA_PRESENCE || 'typing';
 const antilink = process.env.ANTILINK || 'TRUE';
-const antilinkall = process.env.ANTILINK_ALL || 'TRUE';
+const antilinkall = process.env.ANTILINK_ALL || 'FALSE';
 
 const runtime = function (seconds) { 
  seconds = Number(seconds); 
