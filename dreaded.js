@@ -112,10 +112,10 @@ const runtime = function (seconds) {
  var h = Math.floor((seconds % (3600 * 24)) / 3600); 
  var m = Math.floor((seconds % 3600) / 60); 
  var s = Math.floor(seconds % 60); 
- var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : ""; 
- var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hours, ") : ""; 
- var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minutes, ") : ""; 
- var sDisplay = s > 0 ? s + (s == 1 ? " second" : " Seconds") : ""; 
+ var dDisplay = d > 0 ? d + (d == 1 ? " 𝐝𝐚𝐲, " : " 𝐃𝐚𝐲, ") : ""; 
+ var hDisplay = h > 0 ? h + (h == 1 ? " 𝐡𝐨𝐮𝐫, " : " 𝐇𝐨𝐮𝐫𝐬, ") : ""; 
+ var mDisplay = m > 0 ? m + (m == 1 ? " 𝐦𝐢𝐧𝐮𝐭𝐞, " : " 𝐌𝐢𝐧𝐮𝐭𝐞𝐬, ") : ""; 
+ var sDisplay = s > 0 ? s + (s == 1 ? " 𝐬𝐞𝐜𝐨𝐧𝐝" : " 𝐒𝐞𝐜𝐨𝐧𝐝𝐬") : ""; 
  return dDisplay + hDisplay + mDisplay + sDisplay; 
  } 
   
