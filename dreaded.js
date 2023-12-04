@@ -365,6 +365,7 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯│Lyrics
 ┃✯│Whatsong
 ┃✯│Yts
+┃✯│Ytmp3
 ┃✯│Ytmp4
 ┬✯│
 │╰────────────────❍
@@ -1720,7 +1721,7 @@ break;
 break;
 
 case "ping": case "speed": { 
-         m.reply (`𝐋𝐚𝐭𝐞𝐧𝐜𝐲:\n\n${dreadedspeed.toFixed(4)} 𝐦𝐬`); 
+         m.reply (`*𝐋𝐚𝐭𝐞𝐧𝐜𝐲:{dreadedspeed.toFixed(4)} _𝐦𝐬_*`); 
          } 
  break; 
   
