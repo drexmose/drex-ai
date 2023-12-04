@@ -1726,7 +1726,7 @@ case "ping": case "speed": {
  break; 
   
  case "runtime": { 
-                 m.reply (`Bot active for *${runtime(process.uptime_())}_*`) 
+                 m.reply (`Bot active for *${runtime(process._uptime())}_*`) 
  } 
  break;
 
