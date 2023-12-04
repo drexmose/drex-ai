@@ -440,7 +440,7 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 if (menu === 'VIDEO') {
 
                    client.sendMessage(m.chat, {
-                        video: fs.readFileSync('./VID-20231204-WA0066.mp4'),
+                        video: fs.readFileSync('./VID-20231204-WA0069.mp4'),
                         caption: cap,
                         gifPlayback: true
                     }, {
