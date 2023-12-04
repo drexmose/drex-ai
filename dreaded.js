@@ -344,7 +344,7 @@ let cap = `╭════〘 𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓 〙═⊷❍
 ┃✯│ Owner : 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏
 ┃✯│ User : ${m.pushName} 
 ┃✯│ Platform : Linux
-┃✯│Speed: ${dreadedspeed.toFixed(4)} 𝐦𝐬
+┃✯│Speed: *𝐋𝐚𝐭𝐞𝐧𝐜𝐲${dreadedspeed.toFixed(4)} _𝐦𝐬_*
 ┃✯│Available RAM : 34 GB of 62 GB
 ┃✯│Runtime: ${runtime(process.uptime())}
 ┃✯│𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 𝐯𝟔.𝟎.𝟕
