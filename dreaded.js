@@ -1720,7 +1720,7 @@ break;
 break;
 
 case "ping": case "speed": { 
-         m.reply (`${dreadedspeed.toFixed(4)} 𝐦𝐬`); 
+         m.reply (`𝐋𝐚𝐭𝐞𝐧𝐜𝐲:\n\n${dreadedspeed.toFixed(4)} 𝐦𝐬`); 
          } 
  break; 
   
