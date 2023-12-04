@@ -1721,7 +1721,7 @@ break;
 break;
 
 case "ping": case "speed": { 
-         m.reply (`*𝐋𝐚𝐭𝐞𝐧𝐜𝐲:{dreadedspeed.toFixed(4)} _𝐦𝐬_*`); 
+         m.reply (`*𝐋𝐚𝐭𝐞𝐧𝐜𝐲:${dreadedspeed.toFixed(4)} _𝐦𝐬_*`); 
          } 
  break; 
   
