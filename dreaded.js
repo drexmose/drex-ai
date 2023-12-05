@@ -1814,7 +1814,7 @@ client.sendMessage(from, buttonMessage, { quoted: m })
  //await client.sendMessage(from, { text: artist} {quoted: m}); 
  // console.log("About the Artist:\n", artist, "\n"); 
  break 
-        case "toimage": case "toimg": { 
+        case "toimage": case "photo": { 
     if (!quoted) throw 'Tag a static video with the command!'; 
     if (!/webp/.test(mime)) throw `Tag a sticker with ${prefix + command}`; 
   
