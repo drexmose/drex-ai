@@ -1,7 +1,8 @@
 # CROWN-MD
-<p align="center"> 
-<u>👑𝐋𝐎𝐍𝐆 𝐋𝐈𝐕𝐄 𝐂𝐑𝐎𝐖𝐍👑</u>
-</p>
+<div align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=LONG LIVE+👑CROWN-MD👑;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+SIRM;PUBLIC+RELESED; ...;TEAM CROWN-𝙼𝙳." alt="Typing SVG" /></a>
+  </p>
+  
 <p align="center">
 <img src="https://i.imgur.com/oE6btwC.jpeg" width="300" height="300"/>
 </p>
