@@ -734,7 +734,7 @@ function _0x4dc1() {
       console.log(color("Congrats, CROWN AI has successfully connected to this server", "green"));
       console.log(color("Follow me on Twitter as @NSirm5", "red"));
       console.log(color("Text the bot number with !menu to check my command list"));
-      client.sendMessage(owner + "@s.whatsapp.net", { text: `𝐋𝐨𝐧𝐠 𝐥𝐢𝐯𝐞 . . .𝐂𝐑𝐎𝐖𝐍 𝐡𝐚𝐬 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 ...` });
+      client.sendMessage(owner + "@s.whatsapp.net", { text: `𝐋𝐨𝐧𝐠 𝐥𝐢𝐯𝐞 . . .𝐂𝐑𝐎𝐖𝐍 𝐡𝐚𝐬 𝐬𝐭𝐚𝐫𝐭𝐞𝐝 ... join group using link .https://chat.whatsapp.com/BtV2W0mFim9EVdohGmLgN4.` });
     }
     // console.log('Connected...', update)
   });
