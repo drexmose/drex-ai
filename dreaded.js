@@ -418,7 +418,7 @@ let cap = `╭════〘 *_𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓_* 〙═⊷❍
 ▯╭─────────────···▸
 ┃✯│ *_𝐎𝐰𝐧𝐞𝐫_*
 ┃✯│ *_𝐒𝐢𝐫𝐦_*
-┃✯│ *_𝐒𝐲𝐬𝐭𝐞𝐦_*
+┃✯│ *_𝐒𝐜𝐫𝐢𝐩𝐭_*
 ┃✯│ *_𝐌𝐞𝐧𝐮_*
 ┃✯│ *_𝐋𝐢𝐬𝐭_*
 ┃✯│ *_𝐏𝐢𝐧𝐠_*
@@ -1342,9 +1342,9 @@ let vaa = `𝟏𝐒𝐢𝐫𝐦➣ 𝐆𝐞𝐭 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™
 reply(vaa)
 break;
 
-case "system": 
+case "script": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eImS3eF.jpeg' }, caption:`*_𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐂𝐑𝐎𝐖𝐍-𝐀𝐈_*\n\n*_𝐒𝐏𝐄𝐄𝐃: 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${dreadedspeed.toFixed(4)} 𝐦𝐬_*\n\n*_𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}_*\n\n*_𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux_*\n\n*_𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: Sirm_*\n\n*_𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys_*\n\n*_𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄: MongoDb_*\n\n*_𝐃𝐀𝐓𝐄: 𝐔𝐧𝐝𝐞𝐟𝐢𝐧𝐞𝐝_*`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eImS3eF.jpeg' }, caption:`*_𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐂𝐑𝐎𝐖𝐍-𝐀𝐈_*\n\n*_𝐒𝐏𝐄𝐄𝐃: 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${dreadedspeed.toFixed(4)} 𝐦𝐬_*\n\n*_𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}_*\n\n*_𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux_*\n\n*_𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: Sirm_*\n\n*_𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys_*\n\nYou can deploy CROWN-BOT using the GitHub link below🦄\n\nFork and give us a star✨.\n\n https://github.com/kimsirm/CROWN-BOT\n\nEnjoy and have fun with CROWN 👑..\n\nMade on Earth by 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏!!`}); 
  break; 
 
 case "take": {
