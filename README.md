@@ -43,6 +43,12 @@ Linking/Pairing:
 </a>
 </h2>
 
+Alternatively, pair locally using the repo [Here](https://github.com/Fortunatusmokaya/DREADED-PAIRING)
+
+    
+<h2 align="center">   
+
+
 
     
 <h2 align="center">   
