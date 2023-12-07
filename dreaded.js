@@ -1884,7 +1884,7 @@ case "movie":
   
    
        case"script":
-       client,sendmessage(m.chat, { image: {url: 'https://i.imgur.com/a63JNal.jpeg' }, caption: 'You can deploy CROWN-BOT using the GitHub link below🦄\n\nFork and give us a star✨.\n\n https://github.com/kimsirm/CROWN-BOT\n\nEnjoy and have fun with CROWN 👑..\n\nMade on Earth by 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏!!', {quoted: m}); 
+       client.sendmessage(m.chat, { image: {url: 'https://i.imgur.com/a63JNal.jpeg' }, caption: 'You can deploy CROWN-BOT using the GitHub link below🦄\n\nFork and give us a star✨.\n\n https://github.com/kimsirm/CROWN-BOT\n\nEnjoy and have fun with CROWN 👑..\n\nMade on Earth by 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏!!', {quoted: m}); 
         
                                    
              case "linkgroup": case "link": { 
