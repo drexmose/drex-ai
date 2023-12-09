@@ -30,7 +30,7 @@ const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/
 const store = makeInMemoryStore({ logger: pino().child({ level: "silent", stream: "store" }) });
 
     const autoviewstatus = process.env.AUTOVIEW_STATUS || 'TRUE';
-const welcome = process.env.WELCOME || 'FALSE';
+const welcome = process.env.WELCOME || 'TRUE';
 
 const color = (text, color) => {
   return !color ? chalk.green(text) : chalk.keyword(color)(text);
