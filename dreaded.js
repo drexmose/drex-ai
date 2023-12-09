@@ -458,7 +458,7 @@ let cap = `╭════〘 *_𝐂𝐑𝐎𝐖𝐍 𝐁𝐎𝐓_* 〙═⊷❍
 if (menu === 'VIDEO') {
 
                    client.sendMessage(m.chat, {
-                        video: fs.readFileSync('./VID-20231101-WA0960.mp4'),
+                        video: fs.readFileSync('./menu.mp4'),
                         caption: cap,
                         gifPlayback: true
                     }, {
@@ -477,7 +477,7 @@ client.sendMessage(m.chat, {
                                 showAdAttribution: true,
                                 title: `𝐂𝐑𝐎𝐖𝐍-𝐀𝐈`,
                                 body: `${runtime(process.uptime())}`,
-                                thumbnail: fs.readFileSync('./IMG-20231127-WA0153.jpg'),
+                                thumbnail: fs.readFileSync('./crown.jpg'),
                                 sourceUrl: 'https://wa.me/923195832822?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
                                 mediaType: 1,
                                 renderLargerThumbnail: true
