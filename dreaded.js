@@ -1326,8 +1326,9 @@ let vaa = `𝟏𝐒𝐢𝐫𝐦➣ 𝐆𝐞𝐭 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™
 reply(vaa)
 break;
 
-  case "system":
-    client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eImS3eF.jpeg' }, caption:`*_𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐂𝐑𝐎𝐖𝐍-𝐀𝐈_*\n\n*_𝐒𝐏𝐄𝐄𝐃: 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${dreadedspeed.toFixed(4)} 𝐦𝐬_*\n\n*_𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}_*\n\n*_𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux_*\n\n*_𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: Sirm_*\n\n*_𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys_*`}); 
+  case "system": 
+  
+              client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/eImS3eF.jpeg' }, caption:`*_𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐂𝐑𝐎𝐖𝐍-𝐀𝐈_*\n\n*_𝐒𝐏𝐄𝐄𝐃: 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${dreadedspeed.toFixed(4)} 𝐦𝐬_*\n\n*_𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}_*\n\n*_𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux_*\n\n*_𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: Sirm_*\n\n*_𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys_*`}); 
  break; 
 
 case "take": {
