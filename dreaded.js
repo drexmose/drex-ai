@@ -1875,10 +1875,32 @@ case "movie":
              } 
  break;
  
-          case "sirm": case "owner": case "sirm": 
- client.sendMessage(m.chat, { video: { url: 'https://i.imgur.com/9WyMGc4.mp4' }, caption: `Say no more 😌 here is 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏 contact +923195832822 🥱` }, {quoted: m}); 
-  
- break; 
+       if (cmd) {
+      switch (command) {
+      case "help":
+        case "menu":
+let cap = `Here is 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏 contact 🌚`;
+        client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/pYvWfzM.jpeg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
+} else if (sirm === 'LINK') {
+client.sendMessage(m.chat, {
+                        text: cap,
+                        contextInfo: {
+                            externalAdReply: {
+                                showAdAttribution: true,
+                                title: `𝐂𝐑𝐎𝐖𝐍-𝐀𝐈`,
+                                body: `${runtime(process.uptime())}`,
+                                thumbnail: fs.readFileSync('./IMG-20231127-WA0153.jpg'),
+                                sourceUrl: 'https://wa.me/923195832822?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
+                                mediaType: 1,
+                                renderLargerThumbnail: true
+                            }
+                        }
+                    }, {
+                        quoted: sirm
+                    })
+
+       }
+break;
 
 
           // OWNER COMMANDS
