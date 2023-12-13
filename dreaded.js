@@ -1460,7 +1460,7 @@ break
   case 'play':
     case 'stream': {
         if (!text) {
-            reply('Provide a search term!\nE.g: play Alan walker alone')
+            reply('𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐚 𝐬𝐞𝐚𝐫𝐜𝐡 𝐭𝐞𝐫𝐦!\n𝐄.𝐠: 𝐩𝐥𝐚𝐲 𝐮𝐦𝐛𝐫𝐞𝐥𝐥𝐚 𝐍𝐚𝐬𝐛𝐨𝐢')
             return;
         }
         try {
