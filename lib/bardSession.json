@@ -1,6 +1,6 @@
 [
     {
-        "omain": ".google.com",
+        "domain": ".google.com",
         "expirationDate": 1735304645.713204,
         "hostOnly": false,
         "httpOnly": true,
