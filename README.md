@@ -10,7 +10,7 @@
   <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=d1fa02&center=true&vCenter=true&multiline=false&lines=DREX-BOT+WHATSAPP+BOT" alt="">
 </p>
 <p align="center">
-<a href="#"><img title="Creator" src="https://img.shields.io/badge/Creator-𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼-blue.svg?style=for-the-badge&logo=github"></a>
+<a href="#"><img title="Creator" src="https://img.shields.io/badge/Creator-DARK_INTENT-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="'https://wa.me/254102074064yoh+𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼ +nishow+venye+nitadeploy+drex-ai'"><img title="Whatsapp" src="'https://wa.me/254102074064yoh+𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼ +nishow+venye+nitadeploy+drex-ai'?color=green&style=flat-square"></a>
@@ -71,14 +71,14 @@ Alternatively, pair locally using the repo [Here](https://github.com/Fortunatusm
 
 
 
-Incase of any issues, contact me  [here](https://wa.me/+923195832822) via WhatsApp or [here](sirmnjai@gmail.com) via Email.
+Incase you're facing any problems with rhe deployments, contact me  [here](https://wa.me/254102074064) via WhatsApp or [here](darkintent120@gmail.com) via Email.
 
 Modifying the bot structure is at your own risk. We won't offer technical support in case of errors resulting!
 
 
 ## License
 
-[MIT License](https://https://github.com/kimsirm/CROWN-MD/blob/main/LICENSE)
+[MIT License](https://https://github.com/drexmose/Cdrex-ai/blob/main/LICENSE)
 
 Copyright (c) 2023 𝐃𝐑𝐄𝐗_𝐀𝐈
 
