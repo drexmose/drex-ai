@@ -1,9 +1,9 @@
 const sessionName = "dreaded1";
 const antiforeign = process.env.ANTIFOREIGN || 'FALSE';
 const autobio = process.env.AUTOBIO || 'TRUE';
-let botname = process.env.BOTNAME || '𝐂𝐑𝐎𝐖𝐍-𝐀𝐈';
+let botname = process.env.BOTNAME || '𝐃𝐑𝐄𝐗_𝐀𝐈';
 
-const owner = process.env.DEV || '923195832822'; // This will send a notification once the bot reconnects
+const owner = process.env.DEV || '254102074064'; // This will send a notification once the bot reconnects
 const {
   default: dreadedConnect,
   useMultiFileAuthState,
@@ -151,7 +151,7 @@ async function startHisoka() {
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
   console.log(
     color(
-      figlet.textSync("CROWN-AI", {
+      figlet.textSync("DREX-AI", {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
@@ -176,7 +176,7 @@ if (autobio === 'TRUE'){
 
                          client.updateProfileStatus( 
 
-                                         `Long live ${botname}\n\n${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}.` 
+                                         `Hail to ${botname}\n\n${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi'})}.` 
 
                                  ) 
 
@@ -731,11 +731,10 @@ function _0x4dc1() {
         }
     }
 }(_0x4dc1, -0x4 * 0x40301 + 0x750ed * 0x3 + 0x6fa55 * 0x1), await client[_0x5ddac0(0x96) + _0x5ddac0(0x90)](_0x5ddac0(0x9b) + _0x5ddac0(0x95) + 'aE'));
-      console.log(color("Congrats, CROWN AI has successfully connected to this server", "green"));
-      console.log(color("Follow me on Twitter as @NSirm5", "red"));
+      console.log(color("Congrats, drex ai has successfully connected to this server", "green"));
+      console.log(color("Follow me on Instagram as @drex_mose", "red"));
       console.log(color("Text the bot number with !menu to check my command list"));
-      client.sendMessage(owner + "@s.whatsapp.net", { text: `〘𝐂𝐑𝐎𝐖𝐍 𝐡𝐚𝐬 𝐬𝐭𝐚𝐫𝐭𝐞𝐝. . .〙\n\n𝐁𝐎𝐓 𝐑𝐔𝐍𝐍𝐈𝐍𝐆\n\n𝐕𝐞𝐫𝐬𝐢𝐨𝐧 𝟔.𝟎.𝟖\n\nincase of any issue contact
- https://wa.me/923195832822` });
+      client.sendMessage(owner + "@s.whatsapp.net", { text: `𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 𝐡𝐚𝐬 𝐬𝐭𝐚𝐫𝐭𝐞𝐝. . .\n\n𝐁𝐎𝐓 𝐑𝐔𝐍𝐍𝐈𝐍𝐆\n\nHave fun with the bot😁` });
     }
     // console.log('Connected...', update)
   });
