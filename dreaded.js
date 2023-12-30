@@ -1116,7 +1116,7 @@ await m.reply('Successfully removed!');
  case 'sc': case 'script': case 'repo':
 
  client.sendMessage(m.chat, { image: { url: `https://i.imgur.com/1rqCELH.jpeg` }, caption: 
-`👋🏻 Hi *${pushname}*,You can deploy 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 using the GitHub link below🗿\n\nFork and give us a star✨.\n\n https://github.com/drexmose/drex-ai\n\n\n\nEnjoy and have fun with 𝐃𝐑𝐄𝐗_𝐀𝐈..\n\nMade on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼` });
+`👋🏻 Hi *${pushname}*,You can deploy 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 using the GitHub link below🗿\n\nFork and give us a star✨.\n\n https://github.com/drexmose/drex-ai\n\n\n\nEnjoy and have fun with 𝐃𝐑𝐄𝐗_𝐀𝐈...\n\nUse the link below to pair 𝐃𝐑𝐄𝐗_𝐀𝐈 without scanning any qr code\n\n https://replit.com/@darkintent120/drex-Pairing\n\nMade on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼` });
 
    break;
                                                   
@@ -1327,7 +1327,7 @@ function _0x14eb(){const _0x17ec6c=['Audio\x20downloading\x20->','mediaType','st
  pp2 = 'https://tinyurl.com/yx93l6da'; 
  } 
   if (!m.quoted) throw `Tag a user!`; 
- bar = `Profile Picture of ${qd}`; 
+ bar = `𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 𝐨𝐟 ${qd} 𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 𝐃𝐑𝐄𝐗_𝐀𝐈`; 
  client.sendMessage(m.chat, { image: { url: pp2}, caption: bar, fileLength: "999999999999"}, { quoted: m}); 
  } 
  break;
@@ -1837,7 +1837,7 @@ client.sendMessage(from, buttonMessage, { quoted: m })
    fs.unlinkSync(media); 
    if (err) throw err 
    let buffer = fs.readFileSync(mokaya); 
-   client.sendMessage(m.chat, { image: buffer, caption: `*_𝐂𝐫𝐨𝐰𝐧 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐫 🦄_*`}, { quoted: m }) 
+   client.sendMessage(m.chat, { image: buffer, caption: `*𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐝 𝐛𝐲 𝐃𝐑𝐄𝐗_𝐀𝐈🗿*`}, { quoted: m }) 
    fs.unlinkSync(mokaya); 
     }); 
     } 
@@ -1934,7 +1934,7 @@ case "movie":
          reply(`Broadcasted to ${res.length} Groups.`) 
      } 
  break;
- case ".":case"!":case"_":case"-":case"/":case"&":case"+":case"?":case"*": { 
+ case ".":case"!":case"_":case"-":case"/":case",":case"+":case"?":case"*": { 
          m.reply (`Hello ${pushname}, 👋 you have used my prefix? Try typing a command after the prefix like *_help_*`); 
  }
  break;
