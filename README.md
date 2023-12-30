@@ -1,10 +1,10 @@
-# CROWN-MD
+# 𝐃𝐑𝐄𝐗_𝐀𝐈
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=LONG LIVE+👑CROWN-MD👑;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+SIRM;PUBLIC+RELESED; ...;TEAM CROWN-𝙼𝙳." alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=LONG LIVE+👑𝐃𝐑𝐄𝐗_𝐀𝐈;WHATSAPP+BOT;CREATED+BY+DARK_INTENT;PUBLIC+RELESED; ...;TEAM CROWN-𝙼𝙳." alt="Typing SVG" /></a>
   </p>
   
 <p align="center">
-<img src="https://i.imgur.com/oE6btwC.jpeg" width="300" height="300"/>
+<img src="https://telegra.ph/file/7a47ec78083fc40e5208d.jpg" width="400" height="500"/>
 </p>
 <p align="center">
   <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=d1fa02&center=true&vCenter=true&multiline=false&lines=CROWN-BOT+WHATSAPP+BOT" alt="">
@@ -24,7 +24,7 @@
 </p>
 
 
-***Made on Earth by 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏 🦄***
+***Made on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼***
 
 
 ***This bot is created with the help of NodeJS and uses [Baileys](https://github.com/adiwajshing/Baileys)***
@@ -54,7 +54,7 @@ Alternatively, pair locally using the repo [Here](https://github.com/Fortunatusm
     
 <h2 align="center">   
 
-- Fork this repo by tapping  [here](https://github.com/kimsirm/CROWN-MD/fork)
+- Fork this repo by tapping  [here](https://github.com/drexmose/drex-ai/fork)
 
 
 - Upload the creds.json that you received to the dreaded1 folder.
@@ -80,5 +80,5 @@ Modifying the bot structure is at your own risk. We won't offer technical suppor
 
 [MIT License](https://https://github.com/kimsirm/CROWN-MD/blob/main/LICENSE)
 
-Copyright (c) 2023 CROWN-MD
+Copyright (c) 2023 𝐃𝐑𝐄𝐗_𝐀𝐈
 
