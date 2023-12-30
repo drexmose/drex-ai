@@ -1,6 +1,6 @@
 {
-  "name": "CROWN-MD",
-  "description": "𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏 first born",
+  "name": "drex-ai",
+  "description": "𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼ dark lord",
   "keywords": [
     "bot",
     "whatsapp",
@@ -14,18 +14,18 @@
     "baileys-md",
     "md-bot"
   ],
-  "website": "https://github.com/kimsirm/CROWN-MD#readme",
-  "repository": "https://github.com/kimsirm/CROWN-MD.git",
-  "logo": "https://i.imgur.com/iSDfKz1.jpeg",
+  "website": "https://github.com/drexmose/drex-ai#readme",
+  "repository": "https://github.com/drexmose/drex-ai.git",
+  "logo": "https://telegra.ph/file/7a47ec78083fc40e5208d.jpg",
   "success_url": "/",
   "env": {
     "PREFIX": {
-      "description": "Prefix of crown MD Ex: . , / , # , & etc. Put any symbol",
+      "description": "Prefix of drex ai Ex: . , / , # , & etc. Put any symbol",
       "required": true
 
     },
     "DEV": {
-      "description": "Put any phone numbers you want to be bot owner without + or spaces \",\" Ex: 923195832822, 254712624687 ",
+      "description": "Put any phone numbers you want to be bot owner without + or spaces \",\" Ex: 254102074094, 254729553638 ",
       "required": true
     },
     "NOT_OWNER_MSG": {
