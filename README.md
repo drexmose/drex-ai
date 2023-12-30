@@ -4,7 +4,7 @@
   </p>
   
 <p align="center">
-<img src="https://telegra.ph/file/7a47ec78083fc40e5208d.jpg" width="850" height="900"/>
+<img src="https://telegra.ph/file/7a47ec78083fc40e5208d.jpg" width="650" height="500"/>
 </p>
 <p align="center">
   <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=d1fa02&center=true&vCenter=true&multiline=false&lines=DREX-AI+WHATSAPP+BOT" alt="">
