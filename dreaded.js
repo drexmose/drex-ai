@@ -604,7 +604,7 @@ function _0x2de4() {
         '\x20and\x20Googl',
         'AgaVJ',
         '6jOniet',
-        '𝐂𝐑𝐎𝐖𝐍-𝐀𝐈',
+        '𝐃𝐑𝐄𝐗_𝐀𝐈',
         '20KZWKYf',
         '\x20needs\x20som',
         'gPDEf',
@@ -1115,7 +1115,7 @@ await m.reply('Successfully removed!');
 
  case 'sc': case 'script': case 'repo':
 
- client.sendMessage(m.chat, { image: { url: `https://i.imgur.com/1rqCELH.jpeg` }, caption: 
+ client.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/4d56dd2321dba69f924f1.jpg` }, caption: 
 `👋🏻 Hi *${pushname}*,You can deploy 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 using the GitHub link below🗿\n\nFork and give us a star✨.\n\n https://github.com/drexmose/drex-ai\n\n\n\nEnjoy and have fun with 𝐃𝐑𝐄𝐗_𝐀𝐈...\n\nUse the link below to pair 𝐃𝐑𝐄𝐗_𝐀𝐈 without scanning any qr code\n\n https://replit.com/@darkintent120/drex-Pairing\n\nMade on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼` });
 
    break;
@@ -1339,7 +1339,7 @@ break;
 
   case "system": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/7a47ec78083fc40e5208d.jpg' }, caption:`*_𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐃𝐑𝐄𝐗_𝐀𝐈_*\n\n*_𝐒𝐏𝐄𝐄𝐃: 𝐋𝐚𝐭𝐞𝐧𝐜𝐲: ${dreadedspeed.toFixed(4)} 𝐦𝐬_*\n\n*_𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}_*\n\n*_𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux_*\n\n*_𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: 𝐃𝐫𝐞𝐱_*\n\n*_𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys_*`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/7a47ec78083fc40e5208d.jpg' }, caption:`*𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐃𝐑𝐄𝐗_𝐀𝐈*\n\n*𝐒𝐏𝐄𝐄𝐃: ${dreadedspeed.toFixed(4)} 𝐌𝐒*\n\n*𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}*\n\n*𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux*\n\n*𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: 𝐃𝐫𝐞𝐱*\n\n*𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys*`}); 
  break; 
 
 case "take": {
@@ -1735,7 +1735,7 @@ break;
 
 case "ping": case "speed": { 
          m.reply (`*"𝗣𝗢𝗡𝗚!!"*
-             ${dreadedspeed.toFixed(4)} _𝐦𝐬_*`); 
+        ${dreadedspeed.toFixed(4)} _𝐦𝐬_*`); 
          } 
  break; 
   
