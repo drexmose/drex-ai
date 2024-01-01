@@ -1317,8 +1317,7 @@ function _0x14eb(){const _0x17ec6c=['Audio\x20downloading\x20->','mediaType','st
                  m.reply(`Send an image or short video with the caption ${prefix + command}`); 
                  } 
           }
-          break;
-          case "dp": { 
+          break;          case "dp": { 
  try { 
  ha = m.quoted.sender; 
  qd = await client.getName(ha); 
