@@ -81,7 +81,7 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     const mime = (quoted.msg || quoted).mimetype || "";
             const qmsg = (quoted.msg || quoted);
     const author = process.env.STICKER_AUTHOR ||'⸙ᴹᵒˢᵉ ᴹᵒᵈᶻ⛥';
-    const packname = process.env.STICKER_PACKNAME || '©𝐝𝐫𝐞𝐱_𝐦𝐨𝐬𝐞⸙';
+    const packname = process.env.STICKER_PACKNAME || '𝐃𝐑𝐄𝐗_𝐀𝐈';
 const dev = process.env.DEV || '254102074064'
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
@@ -1317,7 +1317,9 @@ function _0x14eb(){const _0x17ec6c=['Audio\x20downloading\x20->','mediaType','st
                  m.reply(`Send an image or short video with the caption ${prefix + command}`); 
                  } 
           }
-          break;          case "dp": { 
+          break;
+	      
+           case "dp": { 
  try { 
  ha = m.quoted.sender; 
  qd = await client.getName(ha); 
