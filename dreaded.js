@@ -1340,9 +1340,14 @@ break;
   case "system": 
   
               client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/7a47ec78083fc40e5208d.jpg' }, caption:`*𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐃𝐑𝐄𝐗_𝐀𝐈*\n\n*𝐒𝐏𝐄𝐄𝐃: ${dreadedspeed.toFixed(4)} 𝐌𝐒*\n\n*𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}*\n\n*𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux*\n\n*𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: 𝐃𝐫𝐞𝐱*\n\n*𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys*`}); 
- break; 
-
-case "take": {
+ break;
+	      
+  case "credits": 
+  
+              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/99be422360f151e7e3719.jpg' }, caption: `We express sincere gratitude and acknowledgement to the following:\n\n -Dika Ardnt ➪ Indonesia\n - Writing the base code using case method\nhttps://github.com/DikaArdnt\n\n -Adiwajshing ➪ India\n - Writing and Coding the bot's library (baileys)\nhttps://github.com/WhiskeySockets/Baileys\n\n -WAWebSockets Discord Server community\n-Maintaining and reverse engineering the Web Sockets\nhttps://discord.gg/WeJM5FP9GG\n\n - Fortunatus Mokaya ➪ Kenya\n - Actively compiling and debugging parts of this bot script\nhttps://github.com/Fortunatusmokaya\n\n𝐃𝐑𝐄𝐗_𝐀𝐈 𝐁𝐎𝐓 シ︎`}); 
+ break;
+		      
+  case "take": {
 try {
 
   if (!m.quoted) return reply('Quote a sticker!')
