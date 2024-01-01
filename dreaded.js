@@ -1977,6 +1977,31 @@ case "movie":
  } 
  break;
 
+          case 'ss':
+              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+              sticWait(from)
+					sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/ssweb?url=${args[0]}&apikey=${HunterApi}`)
+					break
+				break;
+
+          case 'takestick':
+					case 'steal':
+              if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+						if (!isQuotedSticker) return reply(`Reply sticker with caption *${prefix}takestick name|author*`)
+						ppp = `${args.join(' ')}`
+						const encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+						const media = await alpha.downloadAndSaveMediaMessage(encmedia, `./sticker/${sender}`)
+						const packname = ppp.split('|')[0]
+						const author = ppp.split('|')[1]
+						exif.create(packname, author, `takestick_${sender}`)
+						exec(`webpmux -set exif ./sticker/takestick_${sender}.exif ./sticker/${sender}.webp -o ./sticker/${sender}.webp`, async (error) => {
+							if (error) return reply(mess.error.api)
+							alpha.sendMessage(from, fs.readFileSync(`./sticker/${sender}.webp`), sticker, {quoted: ftex})
+							fs.unlinkSync(media)
+							fs.unlinkSync(`./sticker/takestick_${sender}.exif`)
+						})
+						break;
+           
           case 'join': { 
                  if (!Owner) throw NotOwner
                  if (!text) return reply("provide a valid group link") 
