@@ -439,7 +439,6 @@ let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷❍
 ┃𓀚│𝐐𝐔𝐎𝐓𝐄𝐋𝐘
 ┃𓀚│𝐒𝐂𝐑𝐈𝐏𝐓
 ┃𓀚│𝐌𝐎𝐒𝐄
-┃𓀚│𝐀𝐈
 ┃𓀚│𝐃𝐑𝐄𝐗
 ┃𓀚│𝐒𝐂
 ┬✯│
@@ -1119,7 +1118,7 @@ await m.reply('Successfully removed!');
  case 'sc': case 'script': case 'repo':
 
  client.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/6b94601bf17f959f9ea84.jpg` }, caption: 
-`👋🏻 Hi *${pushname}*,You can deploy 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 using the GitHub link below🗿\n\nFork and give us a star✨.\n\n https://github.com/drexmose/drex-ai\n\n\n\nEnjoy and have fun with 𝐃𝐑𝐄𝐗_𝐀𝐈...\n\nUse the link below to pair 𝐃𝐑𝐄𝐗_𝐀𝐈 without scanning any qr code\n\n https://replit.com/@darkintent120/drex-Pairing\n\nMade on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼` });
+`👋🏻 Hi *${pushname}*,You can deploy 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 using the GitHub link below🗿\n\nFork and give us a star✨.\n\n https://github.com/drexmose/drex-ai\n\n\n\nEnjoy and have fun with 𝐃𝐑𝐄𝐗_𝐀𝐈...\n\nUse the link below to pair 𝐃𝐑𝐄𝐗_𝐀𝐈 without scanning any qr code\n\n https://replit.com/@darkintent120/Pairing-drex9\n\nMade on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼` });
 
    break;
                                                   
