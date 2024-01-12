@@ -710,9 +710,8 @@ break;
 
 case 'ss': case 'ssweb': {
 if (!q) return reply(`Example ${prefix+command} link`)
-await 
 let krt = await scp1.ssweb(q)
-client.sendMessage(from,{image:krt.result,caption:mess.succes}, {quoted:m})
+client.sendMessage(from,{image:krt.result,caption:Done by Drex}, {quoted:m})
 }
 break;	
 		      
