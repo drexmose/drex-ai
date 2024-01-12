@@ -480,7 +480,7 @@ if (menu === 'VIDEO') {
 client.sendMessage(from, { text: cap}, {quoted: m})
 
 } else if (menu === 'IMAGE') {
-client.sendMessage(m.chat, { image: { url: 'https://i.imgur.com/pYvWfzM.jpeg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
+client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/53077a0e00d6bda32a46b.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
 } else if (menu === 'LINK') {
 client.sendMessage(m.chat, {
                         text: cap,
@@ -489,7 +489,7 @@ client.sendMessage(m.chat, {
                                 showAdAttribution: true,
                                 title: `𝐃𝐑𝐄𝐗_𝐀𝐈`,
                                 body: `${runtime(process.uptime())}`,
-                                thumbnail: fs.readFileSync('./crown.jpg'),
+                                thumbnail: fs.readFileSync('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg'),
                                 sourceUrl: 'https://wa.me/254102074064?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -638,9 +638,9 @@ reply(resultt1.stderr);
 
 
 
-break;
-
-  case 'quotely': {
+break; 
+	    
+case 'qc': case 'text': case 'quotely': {
 try {
 if (!m.quoted.text) throw 'Tag a text';
 let xf = m.quoted.text;
@@ -664,7 +664,7 @@ const rel = await quote(xf, pushname, pppuser)
             }
 
 break;
-            case 'upload': {
+	      case 'url': case 'upload': {
                 
                 let fta2 = await client.downloadAndSaveMediaMessage(qmsg)
                 if (/image/.test(mime)) {
@@ -1117,7 +1117,7 @@ await m.reply('Successfully removed!');
 
  case 'sc': case 'script': case 'repo':
 
- client.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/6b94601bf17f959f9ea84.jpg` }, caption: 
+ client.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/53077a0e00d6bda32a46b.jpg` }, caption: 
 `👋🏻 Hi *${pushname}*,You can deploy 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 using the GitHub link below🗿\n\nFork and give us a star✨.\n\n https://github.com/drexmose/drex-ai\n\n\n\nEnjoy and have fun with 𝐃𝐑𝐄𝐗_𝐀𝐈...\n\nUse the link below to pair 𝐃𝐑𝐄𝐗_𝐀𝐈 without scanning any qr code\n\n https://replit.com/@darkintent120/Pairing-drex9\n\nMade on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼` });
 
    break;
@@ -1251,7 +1251,7 @@ await m.reply('Successfully removed!');
   
  
           
-          case "subject": case "changesubject": { 
+	   case "gname": case "subject": case "changesubject": { 
                  if (!m.isGroup) throw group; 
                  if (!isBotAdmin) throw botAdmin; 
                  if (!isAdmin) throw admin; 
@@ -1341,7 +1341,7 @@ break;
 
   case "system": 
   
-              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/7a47ec78083fc40e5208d.jpg' }, caption:`*𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐃𝐑𝐄𝐗_𝐀𝐈*\n\n*𝐒𝐏𝐄𝐄𝐃: ${dreadedspeed.toFixed(4)} 𝐌𝐒*\n\n*𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}*\n\n*𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux*\n\n*𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: 𝐃𝐫𝐞𝐱*\n\n*𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys*`}); 
+              client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/7be5be30af32e3d53b415.jpg' }, caption:`*𝐁𝐎𝐓 𝐍𝐀𝐌𝐄: 𝐃𝐑𝐄𝐗_𝐀𝐈*\n\n*𝐒𝐏𝐄𝐄𝐃: ${dreadedspeed.toFixed(4)} 𝐌𝐒*\n\n*𝐑𝐔𝐍𝐓𝐈𝐌𝐄: ${runtime(process.uptime())}*\n\n*𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: Linux*\n\n*𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄: 𝐃𝐫𝐞𝐱*\n\n*𝐋𝐈𝐁𝐑𝐀𝐑𝐘: Baileys*\n\n𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑: 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼`}); 
  break;
 	      
   case "credits": 
