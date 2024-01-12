@@ -1994,6 +1994,18 @@ case "movie":
   
   
  break;
+
+	case 'tomp4': case 'tovideo': {
+                if (!quoted) return reply('Reply to Sticker')
+                if (!/webp/.test(mime)) return reply(`reply sticker with caption *${prefix + command}*`)
+                
+		        let { webp2mp4File } = require('./lib/uploader')
+                let media = await client.downloadAndSaveMediaMessage(quoted)
+                let webpToMp4 = await webp2mp4File(media)
+                await client.sendMessage(m.chat, { video: { url: webpToMp4.result, caption: 'Convert Webp To Video' } }, { quoted: m })
+                await fs.unlinkSync(media)
+            }
+            break	      
  
         case "gpt": case "g": 
           
