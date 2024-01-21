@@ -1750,8 +1750,7 @@ break;
 break;
 
 case "ping": case "speed": { 
-         m.reply (`*"𝗣𝗢𝗡𝗚!!"*
-   ${dreadedspeed.toFixed(4)} 𝐌𝐒*`); 
+         m.reply (`𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`); 
          } 
  break; 
   
@@ -1762,7 +1761,7 @@ case "ping": case "speed": {
 
 case "alive": { 
   
- client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/f45d82c44d07bf9229033.mp4' }, caption: `Hello ${m.pushName}, 𝐃𝐑𝐄𝐗_𝐀𝐈 is alive since  ${runtime(process.uptime())}`, fileLength: "9999999999898989899999999" }, { quoted: m }); 
+ client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/5e29ca126d7a46aa3aef4.mp4' }, caption: `Hello ${m.pushName}, 𝐃𝐑𝐄𝐗_𝐀𝐈 is alive since  ${runtime(process.uptime())}`, fileLength: "9999999999898989899999999" }, { quoted: m }); 
  }
 break;
 case 'apk': {
@@ -1904,7 +1903,7 @@ case "movie":
  break;
  
       case "drex": case "owner": case "mose": 
- client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/3a4ea62d01789e54da1e6.mp4' }, caption: `𝐇𝐞𝐫𝐞 𝐢𝐬 𝐦𝐲 𝐇𝐚𝐧𝐝𝐬𝐨𝐦𝐞 𝐎𝐰𝐧𝐞𝐫, +254102074064 (>ᴗ•)🤭` }, {quoted: m}); 
+ client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/6b0e00c0fbd44e475b5a0.mp4' }, caption: `𝐇𝐞𝐫𝐞 𝐢𝐬 𝐦𝐲 𝐇𝐚𝐧𝐝𝐬𝐨𝐦𝐞 𝐎𝐰𝐧𝐞𝐫, +254102074064 (>ᴗ•)🤭` }, {quoted: m}); 
   
  break;
        
