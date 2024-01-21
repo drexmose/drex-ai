@@ -87,9 +87,9 @@ const dev = process.env.DEV || '254102074064'
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
-    const badwordkick = process.env.BAD_WORD_KICK || 'TRUE';
+    const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
    const bad = process.env.BAD_WORD || 'fuck';
-    const autoread = process.env.AUTOREAD || 'FALSE';
+    const autoread = process.env.AUTOREAD || 'TRUE';
     const badword = bad.split(",");
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
     // Group
@@ -97,15 +97,15 @@ const menu = process.env.MENU_TYPE || 'VIDEO';
     const groupName = m.isGroup ? groupMetadata.subject : "";
     const participants = m.isGroup ? await groupMetadata.participants : ""; 
      const groupAdmin = m.isGroup ? await getGroupAdmins(participants) : ""; 
-     const isBotAdmin = m.isGroup ? groupAdmin.includes(botNumber) : false; 
-     const isAdmin = m.isGroup ? groupAdmin.includes(m.sender) : false;
-const admin = process.env.ADMIN_MSG || '𝐅𝐚𝐢𝐥𝐮𝐫𝐞!, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐭𝐨𝐨 𝐲𝐨𝐮𝐧𝐠 𝐭𝐨 𝐝𝐨 𝐭𝐡𝐚𝐭🦄';
-    const group = process.env.GROUP_ONLY_MSG || 'Is this a group chat?';
-    const botAdmin = process.env.BOT_ADMIN_MSG || '𝐅**𝐤 𝐲𝐨𝐮 🦄𝐚𝐦 𝐚𝐧 𝐧𝐨𝐭 𝐚𝐧 𝐚𝐝𝐦𝐢𝐧'
-    const NotOwner = process.env.NOT_OWNER_MSG || 'Lol you are not 𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏';
+     const isBotAdmin = m.isGroup ? groupAdmin.includes(botNumber) : true; 
+     const isAdmin = m.isGroup ? groupAdmin.includes(m.sender) : true;
+const admin = process.env.ADMIN_MSG || '𝐇𝐮𝐡!\n𝐀𝐝𝐦𝐢𝐦𝐬 𝐨𝐧𝐥𝐲, 𝐝𝐢𝐦𝐰𝐢𝐭.';
+    const group = process.env.GROUP_ONLY_MSG || '𝐆𝐫𝐨𝐮𝐩 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐬𝐢𝐥𝐥𝐲.';
+    const botAdmin = process.env.BOT_ADMIN_MSG || '𝐈𝐦 𝐧𝐨𝐭 𝐚𝐧 𝐚𝐝𝐦𝐢𝐧 𝐛*𝐭𝐜𝐡'
+    const NotOwner = process.env.NOT_OWNER_MSG || '𝐎𝐰𝐧𝐞𝐫 𝐨𝐧𝐥𝐲 🗿';
 const wapresence = process.env.WA_PRESENCE || 'recording';
-const antilink = process.env.ANTILINK || 'TRUE';
-const antilinkall = process.env.ANTILINK_ALL || 'FALSE';
+const antilink = process.env.ANTILINK || 'FALSE';
+const antilinkall = process.env.ANTILINK_ALL || 'TRUE';
 
 const runtime = function (seconds) { 
  seconds = Number(seconds); 
