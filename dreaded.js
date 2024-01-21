@@ -518,6 +518,17 @@ console.log(advice());
 
 break;
 
+case 'remini': {
+			if (!quoted) return reply(`Where is the picture?`)
+			if (!/image/.test(mime)) return replygcxeon(`Send/Reply Photos With Captions ${prefix + command}`)
+			
+			const { remini } = require('./lib/remini')
+			let media = await quoted.download()
+			let proses = await remini(media, "enhance")
+			client.sendMessage(m.chat, { image: proses, caption: mess.success}, { quoted: m})
+			}
+			break;		      
+
 case "compile-py":
 
 if (!text && !m.quoted) throw 'Quote/tag a python code to compile.';
