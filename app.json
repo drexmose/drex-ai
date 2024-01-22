@@ -21,8 +21,7 @@
   "env": {
     "PREFIX": {
       "description": "Prefix of drex ai Ex: . , / , # , & etc. Put any symbol",
-      "value": "."
-      "required": true
+       "required": true
 
     },
     "DEV": {
