@@ -232,16 +232,21 @@ if (budy.startsWith('>')) {
 
 	  async function loading () {
 var lod = [
-"ME",
-"AND",
-"MY",
-"GIRLFRIEND",
-"WE",
-	"ARE",
-	"HOES",
-"I am a whore, what? 😵🤯"
+"🥺",
+"😭",
+"😁",
+"😎",
+"🤬",
+	"❤️",
+	"🌝",
+        "🌚",
+        "👀", 
+        "😁",
+        "😜",
+        "🗿",	
+"⭓𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲 𝐝𝐫𝐞𝐱! 😬"
 ]
-let { key } = await client.sendMessage(from, {text: 'I am a whore 😡...'})
+let { key } = await client.sendMessage(from, {text: '𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲 𝐝𝐫𝐞𝐱! 😬...'})
 
 for (let i = 0; i < lod.length; i++) {
 await client.sendMessage(from, {text: lod[i], edit: key });
@@ -1795,6 +1800,8 @@ break;
 break;
 
 case "ping": case "speed": { 
+	
+	          await loading ()
          m.reply (`𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* *ms*`); 
          } 
  break; 
