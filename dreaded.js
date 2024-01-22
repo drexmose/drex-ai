@@ -526,7 +526,7 @@ case 'remini': {
 			const { remini } = require('./lib/remini')
 			let media = await quoted.download()
 			let proses = await remini(media, "enhance")
-			client.sendMessage(m.chat, { image: proses, caption: 'what the fuck', { quoted: m})
+			client.sendMessage(m.chat, { image: proses, caption: 'what the fuck'}, { quoted: m})
 			}
 			break;		      
 
