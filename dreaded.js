@@ -361,9 +361,11 @@ if (antilink === 'TRUE' && antilinkall === 'TRUE' && body.includes('http') && !O
     if (cmd) {
       switch (command) {
 
-		      await loading ()
+		      
       case "help":
         case "menu": 
+
+		      await loading ()
 let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 ┃⭓╭──────────────┉◕
 ┃⬬│ 𝗢𝘄𝗻𝗲𝗿 :𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼
