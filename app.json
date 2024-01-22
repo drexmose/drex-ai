@@ -21,34 +21,35 @@
   "env": {
     "PREFIX": {
       "description": "Prefix of drex ai Ex: . , / , # , & etc. Put any symbol",
-      "valeu": "."
+      "value": "."
       "required": true
 
     },
     "DEV": {
       "description": "Put any phone numbers you want to be bot owner without + or spaces \",\" Ex: 254102074064, 254729553638 ",
-      "valeh": "254102074064"
+      "value": "254102074064"
       "required": true
     },
     "NOT_OWNER_MSG": {
       "description": "Put a message that the bot will send if a parameter that requires only owner user is violated. Example: Owner only",
-      "valeu": " 𝐇𝐮𝐡! 𝐎𝐰𝐧𝐞𝐫'𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐨𝐦𝐥𝐲 𝐧𝐢𝐧𝐜𝐨𝐦𝐩𝐨𝐨𝐩."
+      "value": " 𝐇𝐮𝐡! 𝐎𝐰𝐧𝐞𝐫'𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐨𝐦𝐥𝐲 𝐧𝐢𝐧𝐜𝐨𝐦𝐩𝐨𝐨𝐩."
       "required": true
     },
     
     
     "BOT_ADMIN_MSG": {
       "description": "Put a message that the bot will send if a parameter that requires bot to be admin is violated. Example: Bot is not admin!",
-      "valeu": "𝐈'𝐦 𝐧𝐨𝐭 𝐚𝐧 𝐚𝐝𝐦𝐢𝐧, 𝐝𝐢𝐦𝐰𝐢𝐭."
+      "value": "𝐈'𝐦 𝐧𝐨𝐭 𝐚𝐧 𝐚𝐝𝐦𝐢𝐧, 𝐝𝐢𝐦𝐰𝐢𝐭."
       "required": true
     },
     "ADMIN_MSG": {
       "description": "Put a message that the bot will send if a parameter that requires only owner user is violated. Example: Only admins are allowed to use this command",
-      "valeu": "𝐑𝐞𝐥𝐚𝐱 𝐲𝐨𝐮𝐫 𝐛𝐚𝐥𝐥𝐬 𝐤𝐢𝐝, 𝐚𝐝𝐦𝐢𝐧'𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐨𝐧𝐥𝐲!" 
+      "value": "𝐑𝐞𝐥𝐚𝐱 𝐲𝐨𝐮𝐫 𝐛𝐚𝐥𝐥𝐬 𝐤𝐢𝐝, 𝐚𝐝𝐦𝐢𝐧'𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐨𝐧𝐥𝐲!" 
       "required": true
     },
     "BAD_WORD": {
       "description": "List words separated with commas that will be considered as bad and will trigger bot to kick. Example: fuck, pussy, hoe",
+      "value": "fuck, pussy, hoe, nigga, bitch, umbwa, mbwa, fala, mea, sikujali, skujali, kinuthia, dwanzi, kumamako, mzee, whore"
       "required": false
     },
     "BAD_WORD_KICK": {
@@ -58,26 +59,27 @@
     },
     "GROUP_ONLY_MSG": {
       "description": "Put a message that the bot will send if a parameter that works in group chats only is violated. Example: This command will work in groups only",
-      "valeu": "𝐆𝐫𝐨𝐮𝐩 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐝𝐮𝐦𝐦𝐲"
+      "value": "𝐆𝐫𝐨𝐮𝐩 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐝𝐮𝐦𝐦𝐲"
       "required": true
     },
       "AUTOREAD": {
       "description": "Put here TRUE if you want bot to automatically bluetick messages in private chats",
-      "valeu": "TRUE"
+      "value": "TRUE"
       "required": true
 },
  "AUTOVIEW": {
       "description": "Input true if you want bot to automatically read status update",
-      "valeu": "TRUE"
+      "value": "TRUE"
       "required": false
 },
  "WA_PRESENCE": {
       "description": "Input either recording or typing. This enables bot to simulate typing or recording.",
-      "valeu": "recording"
+      "value": "recording"
       "required": false
 },
  "ANTILINK": {
       "description": "Input TRUE if you want bot to kick link senders",
+      "value": "FALSE"
       "required": false
 },
  "ANTILINK_ALL": {
@@ -92,7 +94,7 @@
 },
  "WELCOME": {
       "description": "Input TRUE if you want bot to send welcome message to new members.",
-      "valeu": "FALSE"
+      "value": "FALSE"
       "required": false
 },
  "ANTIFOREIGN": {
@@ -102,30 +104,32 @@
 },
  "AUTOBIO": {
       "description": "Input TRUE if you want bot to autoupdate its about with current time and date.",
+      "value": "TRUE"
       "required": false
 },
  "APP_NAME": {
       "description": "Input your app name that you put above.",
-      "valeu": "TRUE"
+      "value": "TRUE"
       "required": true
 },
  "STICKER_AUTHOR": {
       "description": "Input sticker data for author",
-      "valeu": "⸙ᴹᵒˢᵉ ᴹᵒᵈᶻ⛥"
+      "valeu": "WhatsApp bot"
       "required": false
 },
  "STICKER_PACKNAME": {
       "description": "Input sticker data for packname",
-      "valeu": "©𝐝𝐫𝐞𝐱_𝐦𝐨𝐬𝐞⚸"
+      "value": "drex ai"
       "required": false
 },
  "GPT_INBOX": {
       "description": "Input TRUE if you want bot to autoreply inbox messages using openai API.",
-      "valeu": "FALSE"
+      "value": "FALSE"
       "required": false
 },
  "MENU_TYPE": {
       "description": "Input either VIDEO, LINK or IMAGE. This will allow bot to display different dynamic menu types",
+      "value": " "
       "required": false
 
     
@@ -133,7 +137,7 @@
     },
     "AI": {
       "description": "Put your OpenAI API key here. This will allow AI features to work correctly. This key starts with sk-",
-      "valeu": "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"
+      "value": "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"
       "required": false
     }
   },
