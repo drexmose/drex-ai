@@ -235,6 +235,24 @@ if (budy.startsWith('>')) {
 
     if (gptdm === 'TRUE' && m.chat.endsWith("@s.whatsapp.net")) {
 
+
+
+  //menu loading
+async function loading () {
+var lod = [
+"《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
+"《 ████▒▒▒▒▒▒▒▒》30%",
+"《 ███████▒▒▒▒▒》50%",
+"《 ██████████▒▒》80%",
+"《 ████████████》100%",
+"𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐒𝐮𝐜𝐜𝐞𝐬𝐬 #𝗗𝗿𝗲𝘅..."
+]
+let { key } = await client.sendMessage(from, {text: 'ʟᴏᴀᴅɪɴɢ...'})
+
+for (let i = 0; i < lod.length; i++) {
+await client.sendMessage(from, {text: lod[i], edit: key });
+}
+}	    
   	
 
   // if (!text) return reply("I need more text. For better experience with my inbox AI make longer statements.");
