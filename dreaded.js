@@ -526,7 +526,7 @@ case 'remini': {
 			const { remini } = require('./lib/remini')
 			let media = await quoted.download()
 			let proses = await remini(media, "enhance")
-			client.sendMessage(m.chat, { image: proses, caption: mess.success}, { quoted: m})
+			client.sendMessage(m.chat, { image: proses, caption: 'what the fuck', { quoted: m})
 			}
 			break;		      
 
@@ -1146,7 +1146,7 @@ await m.reply('Successfully removed!');
  case 'sc': case 'script': case 'repo':
 
  client.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/53077a0e00d6bda32a46b.jpg` }, caption: 
-`👋🏻 Hi *${pushname}*,You can deploy 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 using the GitHub link below🗿\n\nFork and give us a star✨.\n\n https://github.com/drexmose/drex-ai\n\n\n\nEnjoy and have fun with 𝐃𝐑𝐄𝐗_𝐀𝐈...\n\nUse the link below to pair 𝐃𝐑𝐄𝐗_𝐀𝐈 without scanning any qr code\n\n https://replit.com/@darkintent120/Pairing-drex9\n\nMade on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼` });
+`👋🏻 Hi *${pushname}*,You can deploy 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 using the GitHub link below🗿\n\nFork and give us a star✨.\n\n https://github.com/drexmose/drex-ai\n\nEnjoy and have fun with 𝐃𝐑𝐄𝐗_𝐀𝐈...\n\nUse the link below to pair 𝐃𝐑𝐄𝐗_𝐀𝐈 without scanning any qr code\n\n [https://replit.com/@darkintent120/Pairing-drex9]\n\nMade on Earth by 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼` });
 
    break;
                                                   
@@ -1769,7 +1769,7 @@ break;
 break;
 
 case "ping": case "speed": { 
-         m.reply (`𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`); 
+         m.reply (`𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* *ms*`); 
          } 
  break; 
   
@@ -2022,7 +2022,7 @@ case "movie":
   
  break;
 
-	case 'tomp4': case 'tovideo': {
+	      case 'tovideo': case 'tomp4': case 'tovid': {
                 if (!quoted) return reply('Reply to Sticker')
                 if (!/webp/.test(mime)) return reply(`reply sticker with caption *${prefix + command}*`)
                 
