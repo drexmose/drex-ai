@@ -354,7 +354,6 @@ if (antilink === 'TRUE' && antilinkall === 'TRUE' && body.includes('http') && !O
       );
     }
 
-    await loading ()
     if (cmd) {
       switch (command) {
       case "help":
