@@ -386,7 +386,6 @@ var sanzytod = [
 "_Hello My Name is ©𝐝𝐫𝐞𝐱_𝐦𝐨𝐬𝐞⚸_",
 "_Base Script : 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼_",
 "_Recode : ⸙ᴹᵒˢᵉ ᴹᵒᵈᶻ⛥_"
-"_Bot : 𝐃𝐑𝐄𝐗_𝐀𝐈_",
 "_Thank you for waiting_",
 let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 ┃⭓╭──────────────┉◕
