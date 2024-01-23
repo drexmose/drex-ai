@@ -230,6 +230,24 @@ if (budy.startsWith('>')) {
    } 
  } 
 
+	   async function loadings () {
+var lod = [
+"⭓",
+"⬬",
+"☯",
+"☪",
+"☫",
+	"✞",
+        "𝐏𝐢𝐧𝐠𝐢𝐧𝐠!!!",	
+"⭓𝐏𝐨𝐧𝐠"
+]
+let { key } = await client.sendMessage(from, {text: '⭓𝐏𝐨𝐧𝐠'})
+
+for (let i = 0; i < lod.length; i++) {
+await client.sendMessage(from, {text: lod[i], edit: key });
+}
+}	 
+	  
 	  async function loading () {
 var lod = [
 "🥺",
@@ -1795,9 +1813,7 @@ break;
 break;
 
 case "ping": case "speed": { 
-	
-	          await loading ()
-         m.reply (`𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* *ms*`); 
+         m.reply (await loadings ()`await loadings ()\n *${dreadedspeed.toFixed(4)}* *ms*`); 
          } 
  break; 
   
