@@ -1813,7 +1813,7 @@ break;
 break;
 
 case "ping": case "speed": { 
-         m.reply (await loadings ()`await loadings ()\n *${dreadedspeed.toFixed(4)}* *ms*`); 
+         m.reply (await loadings ()`\n *${dreadedspeed.toFixed(4)}* *ms*`); 
          } 
  break; 
   
