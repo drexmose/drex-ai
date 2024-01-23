@@ -380,8 +380,6 @@ if (antilink === 'TRUE' && antilinkall === 'TRUE' && body.includes('http') && !O
       switch (command) {
 
 		      
-      switch(command) {
-		      
 case 'menu': 
 case 'mose':
 var sanzytod = [
