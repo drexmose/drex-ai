@@ -234,7 +234,7 @@ if (budy.startsWith('>')) {
 var lod = [
 "⭓",
 "⬬",
-"☯",
+"⭗",
 "☪",
 "☫",
 	"✞",
@@ -1153,7 +1153,7 @@ break;
          if (!isBotAdmin) throw botAdmin; 
           if (!Owner) throw NotOwner; 
                  await client.groupParticipantsUpdate(m.chat,  [m.sender], 'promote'); 
- m.reply('Promoted To Admin<🥇'); 
+ m.reply('𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 𝐂𝐫𝐨𝐰𝐧𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ✞'); 
           }
           break;
 
@@ -1821,7 +1821,7 @@ case "ping": case "speed": {
  break; 
   
  case "runtime": { 
-                 m.reply (`𝐃𝐑𝐄𝐗_𝐀𝐈 𝙷𝚊𝚜 𝙱𝚎𝚎𝚗 𝙰𝚌𝚝𝚒𝚟𝚎 𝙵𝚘𝚛 ${runtime(process.uptime())}`) 
+                 client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/a91218a98b91ec37fac81.mp4' }, caption: `𝐃𝐑𝐄𝐗_𝐀𝐈 𝙷𝚊𝚜 𝙱𝚎𝚎𝚗 𝙰𝚌𝚝𝚒𝚟𝚎 𝙵𝚘𝚛 ${runtime(process.uptime())}` 
  } 
  break;
 
@@ -1908,7 +1908,7 @@ client.sendMessage(from, buttonMessage, { quoted: m })
  //await client.sendMessage(from, { text: artist} {quoted: m}); 
  // console.log("About the Artist:\n", artist, "\n"); 
  break 
-        case "toimage": case "photo": { 
+	case "toimg": case "toimage": case "photo": { 
     if (!quoted) throw 'Tag a static video with the command!'; 
     if (!/webp/.test(mime)) throw `Tag a sticker with ${prefix + command}`; 
   
