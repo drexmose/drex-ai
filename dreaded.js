@@ -239,7 +239,7 @@ var lod = [
 "☫",
 	"✞",
         "⭓𝐏𝐨𝐧𝐠",	
-m.reply "(`${dreadedspeed.toFixed(4)} milliseconds`);"
+	" m.reply (`${dreadedspeed.toFixed(4)} milliseconds`);"
 ]
 let { key } = await client.sendMessage(from, {text: '⭓𝐏𝐨𝐧𝐠'})
 
