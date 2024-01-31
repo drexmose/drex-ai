@@ -235,11 +235,11 @@ var lod = [
 "⭓",
 "⬬",
 "⭗",
-"☪",
+"◍",
 "☫",
 	"✞",
         "⭓𝐏𝐨𝐧𝐠",	
-	" m.reply (`${dreadedspeed.toFixed(4)} milliseconds`);"
+	"𝙿𝙸𝙽𝙶𝙸𝙽𝙶 ◍ ◉ ⭗ "
 ]
 let { key } = await client.sendMessage(from, {text: '⭓𝐏𝐨𝐧𝐠'})
 
@@ -1815,8 +1815,8 @@ break;
 
 case "ping": case "speed": { 
 
-	m.reply
 	await loadings ()
+m.reply (`${dreadedspeed.toFixed(4)} milliseconds`);
          } 
  break; 
   
