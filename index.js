@@ -151,7 +151,7 @@ async function startHisoka() {
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
   console.log(
     color(
-      figlet.textSync("DREX-AI"), {
+      figlet.textSync("DREX-AI", {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
