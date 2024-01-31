@@ -684,6 +684,27 @@ function _0x2de4() {
 }
 break;
 
+  case 'say': case 'tts': case 'gtts':{
+if (!text) return reply('Where is the text?')
+            let texttts = text
+            const rl = googleTTS.getAudioUrl(texttts, {
+                lang: "en",
+                slow: false,
+                host: "https://translate.google.com",
+            })
+            return client.sendMessage(m.chat, {
+                audio: {
+                    url: rl,
+                },
+                mimetype: 'audio/mp4',
+                ptt: true,
+                fileName: `${text}.mp3`
+            }, {
+                quoted: m,
+            })
+        }
+        break;
+
 case "compile-js":
 if (!text && !m.quoted) throw 'Quote/tag a Js code to compile.';
 
