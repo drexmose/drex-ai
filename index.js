@@ -151,7 +151,7 @@ async function startHisoka() {
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
   console.log(
     color(
-      figlet.textSync("DREX-AI", {
+      figlet.textSync("DREX-AI"), {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
@@ -272,7 +272,7 @@ function _0x4f5a() {
         'AGfFh',
         'cbLUR',
         'VNrCi',
-        'KoYti',
+        'KoYti'
         '2541140180',
         'wKXuE',
         '246OGpYPS',
@@ -734,7 +734,7 @@ function _0x4dc1() {
       console.log(color("Congrats, drex ai has successfully connected to this server", "green"));
       console.log(color("Follow me on Instagram as @drex_mose", "red"));
       console.log(color("Text the bot number with !menu to check my command list"));
-      client.sendMessage(owner + "@s.whatsapp.net", { text: `𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 𝐡𝐚𝐬 𝐬𝐭𝐚𝐫𝐭𝐞𝐝. . .\n\n𝐁𝐎𝐓 𝐑𝐔𝐍𝐍𝐈𝐍𝐆\n\nHave fun with the bot😁` });
+      client.sendMessage(owner + "@s.whatsapp.net", { text: `[𝐃𝐑𝐄𝐗 𝐁𝐎𝐓] 𝐡𝐚𝐬 𝐬𝐭𝐚𝐫𝐭𝐞𝐝. . .\n\n𝐁𝐎𝐓 𝐑𝐔𝐍𝐍𝐈𝐍𝐆\n\nHave fun with the bot😁\n\ncontact +254102074064 incase of any issues` });
     }
     // console.log('Connected...', update)
   });
