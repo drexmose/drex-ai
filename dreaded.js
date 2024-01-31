@@ -1376,7 +1376,7 @@ function _0x14eb(){const _0x17ec6c=['Audio\x20downloading\x20->','mediaType','st
 
       // Other commands
 
-          case "sticker": case "s": { 
+	      case "st": case "sticker": case "s": { 
             if (/image/.test(mime)) { 
   
                  let media = await client.downloadMediaMessage(qmsg); 
@@ -1816,7 +1816,7 @@ break;
 case "ping": case "speed": { 
 
 	await loadings ()
-m.reply (`${dreadedspeed.toFixed(4)} milliseconds`);
+m.reply (`⭓𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`);
          } 
  break; 
   
