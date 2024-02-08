@@ -1854,7 +1854,7 @@ m.reply (`▔▔▔▔▔╠ ⛥𝗕𝗢𝗧 𝗜𝗡𝗙𝗢⛥ ╣▔▔▔▔
 
       if (bot === 'VIDEO') {
 
-                   await client.sendMessage(m.chat, {audio: fs.readFileSync('./drex audio.mp3'),mimetype: 'audio/mpeg',ptt: true}, {quoted:ftroli})
+                   client.sendMessage(m.chat, {audio: fs.readFileSync('./drex audio.mp3'),mimetype: 'audio/mpeg',ptt: true}, {quoted:ftroli});
 break;
 
 case "ping": case "speed": { 
