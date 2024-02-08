@@ -230,13 +230,26 @@ if (budy.startsWith('>')) {
    } 
  } 
 
+	   async function load () {
+var lod = [
+"i am drex_ai",
+"cloned by drex mose",
+"have fun with the bot",
+"type .sc to access my source code",
+	"𝐓𝐡𝐚𝐧𝐤 𝐘𝐨𝐮 𝐅𝐨𝐫 𝐖𝐚𝐢𝐭𝐢𝐧𝐠 😁 "
+]
+let { key } = await client.sendMessage(from, {text: '𝐈 𝐚𝐦 𝐃𝐫𝐞𝐱_𝐚𝐢'})
+
+for (let i = 0; i < lod.length; i++) {
+await client.sendMessage(from, {text: lod[i], edit: key });
+}
+}	 
+
 	   async function loadings () {
 var lod = [
 "⭓",
 "⬬",
 "⭗",
-"◍",
-"☫",
 	"✞",
         "⭓𝐏𝐨𝐧𝐠",	
 	"𝙿𝙸𝙽𝙶𝙸𝙽𝙶 ◍ ◉ ⭗ "
@@ -1335,7 +1348,7 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
     client.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.quoted.id, participant: m.quoted.sender } }); 
   } 
  break;
-          case "leave": { 
+          case "leav": { 
                  if (!isAdmin) throw admin; 
  await client.sendText(m.chat,  '𝙵*𝙲𝙺 𝚈𝙾𝚄 𝚂𝙸𝙻𝙻𝚈 𝙰𝙳𝙼𝙸𝙽. 𝙱𝙾𝚃 𝙸𝚂 𝙻𝙴𝙰𝚅𝙸𝙽𝙶 𝙽𝙾𝚆. . .'); 
                  await client.groupLeave(m.chat); 
@@ -1475,7 +1488,7 @@ try {
   }
 break;
  
-          case "song": { 
+          case "songs": { 
  const getRandom = (ext) => { 
    return `${Math.floor(Math.random() * 10000)}${ext}`; 
  }; 
@@ -1836,10 +1849,10 @@ break;
 
 case "bot": { 
 
-	await loadings ()
-m.reply (`▔▔▔▔▔▔▔╠ ⛥𝗕𝗢𝗧 𝗜𝗡𝗙𝗢⛥ ╣▔▔▔▔▔▔▔\n◉𝐂𝐫𝐞𝐚𝐭𝐨𝐫 𝐍𝐚𝐦𝐞 : *ꪶ ࣩࣩࣩࣩ᪵᪵᪵᪵᪵᪵᪵᪵ࣧࣧ𝐝𝐫𝐞𝐱ꪶ ࣩࣧࣧ*\n◎𝐂𝐫𝐞𝐚𝐭𝐨𝐫 𝐍𝐮𝐦𝐛𝐞𝐫 : *wa.me/254102074064*\n◉𝐁𝐨𝐭 𝐆𝐫𝐨𝐮𝐩 : *𝐃𝐑𝐄𝐗 𝐁𝐎𝐓*\n◎𝐒𝐩𝐞𝐞𝐝 : *${dreadedspeed.toFixed(4)}* 𝐌𝐬\n◉𝐔𝐬𝐞𝐫 :\n◎𝐁𝐨𝐭 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 : *1.0.1*\n◉𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : 𝐃𝐑𝐄𝐗_𝐀𝐈\n◎𝐏𝐫𝐞𝐟𝐢𝐱 : ${prefix}\n◉𝐓𝐲𝐩𝐞 𝐁𝐚𝐲𝐥𝐢𝐞𝐬 : 𝗖𝗮𝘀\n◎𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 : *Fortunatusmokaya/DREADED-GPT-AI*\n◉𝐔𝐩𝐭𝐢𝐦𝐞 : ⏳ *${runtime(process.uptime())}*\n\n▭▬▭▬▭▬▭▬▭▬▭▬▭▬▬▭▬\n    ⭓𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 𝐃𝐫𝐞𝐱 𝐌𝐨𝐬𝐞⬣\n▬▭▬▭▬▭▬▭▬▭▬▭▬▬▭▬▭`);
+	await load ()
+m.reply (`▔▔▔▔▔╠ ⛥𝗕𝗢𝗧 𝗜𝗡𝗙𝗢⛥ ╣▔▔▔▔▔\n◉𝐂𝐫𝐞𝐚𝐭𝐨𝐫 𝐍𝐚𝐦𝐞 : *ꪶ ࣩࣩࣩࣩ᪵᪵᪵᪵᪵᪵᪵᪵ࣧࣧ𝐝𝐫𝐞𝐱ꪶ ࣩࣧࣧ*\n◎𝐂𝐫𝐞𝐚𝐭𝐨𝐫 𝐍𝐮𝐦𝐛𝐞𝐫 : *wa.me/254102074064*\n◉𝐁𝐨𝐭 𝐆𝐫𝐨𝐮𝐩 : *𝐃𝐑𝐄𝐗 𝐁𝐎𝐓*\n◎𝐒𝐩𝐞𝐞𝐝 : *${dreadedspeed.toFixed(4)}* 𝐌𝐬\n◉𝐔𝐬𝐞𝐫 ${m.pushName}:\n◎𝐁𝐨𝐭 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 : *1.0.1*\n◉𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : 𝐃𝐑𝐄𝐗_𝐀𝐈\n◎𝐏𝐫𝐞𝐟𝐢𝐱 : ${prefix}\n◉𝐓𝐲𝐩𝐞 𝐁𝐚𝐲𝐥𝐢𝐞𝐬 : 𝗖𝗮𝘀𝗲\n◎𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 : *github.com/Fortunatusmokaya/DREADED-GPT-AI*\n◉𝐔𝐩𝐭𝐢𝐦𝐞 : ⏳ *${runtime(process.uptimle())}*\n\n▭▬▭▬▭▬▭▬▭▬▭▬▭▬▬▭▬\n    ⭓𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 𝐃𝐫𝐞𝐱 𝐌𝐨𝐬𝐞⬣\n▬▭▬▭▬▭▬▭▬▭▬▭▬▬▭▬▭`);
          } 
- break; 
+         break; 
 
 case "ping": case "speed": { 
 
