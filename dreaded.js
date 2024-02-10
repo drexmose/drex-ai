@@ -2126,7 +2126,7 @@ case "movie":
                 await fs.unlinkSync(media)
 
             }
-            break
+            break;
 			
  
         case "gpt": case "g": 
