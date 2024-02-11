@@ -580,7 +580,7 @@ break;
                 let [text1, text2] = q.split`|`
                 if (!text1) return reply(`Quote/reply image/video with caption ${prefix + command} text1|text2`)
                 if (!text2) return reply(`Quote/reply image/video with caption ${prefix + command} text1|text2 `)
-            reply(wait...)
+            
                 if (/image/.test(mime)) {
                     let media = await client.downloadMediaMessage(qmsg)
                     let encmedia = await client.sendImageAsSticker(m.chat, media, m, { pacname: teks1, author: teks2 })
