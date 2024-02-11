@@ -270,7 +270,7 @@ var lod = [
 	"❤️",
         "🗿",	
 "⭓𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲 𝐝𝐫𝐞𝐱! 😬"
-]
+
 let { key } = await client.sendMessage(from, {text: '𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲 𝐝𝐫𝐞𝐱! 😬...'})
 
 for (let i = 0; i < lod.length; i++) {
@@ -582,11 +582,11 @@ break;
                     await fs.unlinkSync(encmediax);                    
 	            await fs.unlinkSync(encmedia)
 		    let media = await client.downloadMediaMessage(qmsg)
-                    let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: drex_mose, author: Mose Modz });	
+                    let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: drex_mose, author: drex-ai });	
                     } else if (/video/.test(mime)) {
                     if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 seconds!')
                     let media = await client.downloadMediaMessage(qmsg)
-                    let encmedia = await client.sendVideoAsSticker(m.chat, media, m, { packname: ©𝐝𝐫𝐞𝐱_𝐦𝐨𝐬𝐞⚸, author: ⸙ᴹᵒˢᵉ ᴹᵒᵈᶻ⛥ })
+                    let encmedia = await client.sendVideoAsSticker(m.chat, media, m, { packname: drex_mose, author: drex-ai })
                     await fs.unlinkSync(encmedia)
                 } else {
                     return reply(`Quote a photo/Video with Caption ${prefix + command}\nduration of Video 1-9 seconds`)
