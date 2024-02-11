@@ -577,9 +577,10 @@ console.log(advice());
 break;
 
 	     case 'attps':
-                if (!q) return reply('Where Is The Text')
-                reply(mess.wait)
+                if (!q) return reply('Where Is The Text');
+                
                 client.sendMessage(m.chat, { sticker: { url: `https://api.lolhuman.xyz/api/attp?apikey=${api.Lol}&text=${q}`} }, { quoted: m })
+                } 
                 break;
 
 	      case 'takes': case 'swm': {
