@@ -579,10 +579,10 @@ break;
 	      case 'takes': case 'swm': {
                             
                 if (/image/.test(mime)) {
-                    let media = await client.downloadMediaMessage(qmsg)
-                    let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: drex_mose, author: Mose Modz });
                     await fs.unlinkSync(encmediax);                    
 	            await fs.unlinkSync(encmedia)
+		    let media = await client.downloadMediaMessage(qmsg)
+                    let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: drex_mose, author: Mose Modz });	
                     } else if (/video/.test(mime)) {
                     if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 seconds!')
                     let media = await client.downloadMediaMessage(qmsg)
