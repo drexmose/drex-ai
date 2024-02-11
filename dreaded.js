@@ -577,6 +577,26 @@ console.log(advice());
 
 break;
 
+	      case 'takes': case 'swm': {
+                let [text1, text2] = q.split`|`
+                if (!text1) return reply(`Quote/reply image/video with caption ${prefix + command} text1|text2`)
+                if (!text2) return reply(`Quote/reply image/video with caption ${prefix + command} text1|text2 `)
+            reply(mess.wait)
+                if (/image/.test(mime)) {
+                    let media = await client.downloadMediaMessage(qmsg)
+                    let encmedia = await client.sendImageAsSticker(m.chat, media, m, { pacname: teks1, author: teks2 })
+                    await fs.unlinkSync(encmedia)
+                } else if (/video/.test(mime)) {
+                    if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 seconds!')
+                    let media = await client.downloadMediaMessage(qmsg)
+                    let encmedia = await client.sendVideoAsSticker(m.chat, media, m, { packname: teks1, author: teks2 })
+                    await fs.unlinkSync(encmedia)
+                } else {
+                    return reply(`Quote a photo/Video with Caption ${prefix + command}\nduration of Video 1-9 seconds`)
+                }
+            }
+            break;
+
 	      case 'hd': case 'hdr': case 'remini': {
 			if (!quoted) return reply(`Where is the picture?`)
 			if (!/image/.test(mime)) return reply(`Send/Reply Photos With Captions ${prefix + command}`)
