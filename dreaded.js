@@ -580,9 +580,10 @@ break;
                             
                 if (/image/.test(mime)) {
                     let media = await client.downloadMediaMessage(qmsg)
-                    let encmedia = await client.sendImageAsSticker(m.chat, media, m, { pacname: ©𝐝𝐫𝐞𝐱_𝐦𝐨𝐬𝐞⚸, author: ⸙ᴹᵒˢᵉ ᴹᵒᵈᶻ⛥ })
-                    await fs.unlinkSync(encmedia)
-                } else if (/video/.test(mime)) {
+                    let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: drex_mose, author: Mose Modz });
+                    await fs.unlinkSync(encmediax);                    
+	            await fs.unlinkSync(encmedia)
+                    } else if (/video/.test(mime)) {
                     if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 seconds!')
                     let media = await client.downloadMediaMessage(qmsg)
                     let encmedia = await client.sendVideoAsSticker(m.chat, media, m, { packname: ©𝐝𝐫𝐞𝐱_𝐦𝐨𝐬𝐞⚸, author: ⸙ᴹᵒˢᵉ ᴹᵒᵈᶻ⛥ })
