@@ -577,18 +577,15 @@ console.log(advice());
 break;
 
 	      case 'takes': case 'swm': {
-                let [text1, text2] = q.split`|`
-                if (!text1) return reply(`Quote/reply image/video with caption ${prefix + command} text1|text2`)
-                if (!text2) return reply(`Quote/reply image/video with caption ${prefix + command} text1|text2 `)
-            
+                            
                 if (/image/.test(mime)) {
                     let media = await client.downloadMediaMessage(qmsg)
-                    let encmedia = await client.sendImageAsSticker(m.chat, media, m, { pacname: teks1, author: teks2 })
+                    let encmedia = await client.sendImageAsSticker(m.chat, media, m, { pacname: ©𝐝𝐫𝐞𝐱_𝐦𝐨𝐬𝐞⚸, author: ⸙ᴹᵒˢᵉ ᴹᵒᵈᶻ⛥ })
                     await fs.unlinkSync(encmedia)
                 } else if (/video/.test(mime)) {
                     if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 seconds!')
                     let media = await client.downloadMediaMessage(qmsg)
-                    let encmedia = await client.sendVideoAsSticker(m.chat, media, m, { packname: teks1, author: teks2 })
+                    let encmedia = await client.sendVideoAsSticker(m.chat, media, m, { packname: ©𝐝𝐫𝐞𝐱_𝐦𝐨𝐬𝐞⚸, author: ⸙ᴹᵒˢᵉ ᴹᵒᵈᶻ⛥ })
                     await fs.unlinkSync(encmedia)
                 } else {
                     return reply(`Quote a photo/Video with Caption ${prefix + command}\nduration of Video 1-9 seconds`)
