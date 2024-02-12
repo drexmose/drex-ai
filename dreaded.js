@@ -2024,7 +2024,7 @@ case "movie":
         
         
                                    
-             case "linkgroup": case "link": { 
+	      case "grouplink": case "invite": case "linkgroup": case "link": { 
                  if (!m.isGroup) throw group; 
                  if (!isBotAdmin) throw botAdmin; 
                  let response = await client.groupInviteCode(m.chat); 
@@ -2133,21 +2133,15 @@ case "movie":
   
  break;
 
-	      case'mp4': case 'tomp4': case 'tovid': case 'tovideo': {
-                if (!/webp/.test(mime)) return reply(`Reply sticker with caption *${prefix + command}*`)
+	      case 'tovideo': case 'tomp4': case 'tovid': {
+                if (!quoted) return reply('Reply to Sticker')
+                if (!/webp/.test(mime)) return reply(`reply sticker with caption *${prefix + command}*`)
                 
-                let media = await client.downloadAndSaveMediaMessage(qmsg)
+		        let { webp2mp4File } = require('./lib/uploader')
+                let media = await client.downloadAndSaveMediaMessage(quoted)
                 let webpToMp4 = await webp2mp4File(media)
-                await client.sendMessage(m.chat, {
-                    video: {
-                        url: webpToMp4.result,
-                        caption: 'Convert Webp To Video'
-                    }
-                }, {
-                    quoted: m
-                })
+                await client.sendMessage(m.chat, { video: { url: webpToMp4.result, caption: 'Convert Webp To Video' } }, { quoted: m })
                 await fs.unlinkSync(media)
-
             }
             break;
 			
