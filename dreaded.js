@@ -2134,7 +2134,7 @@ case "movie":
  break;
 
 	      case'mp4': case 'tomp4': case 'tovid': case 'tovideo': {
-                if (!/webp/.test(mime)) return replygcxeon(`Reply sticker with caption *${prefix + command}*`)
+                if (!/webp/.test(mime)) return reply(`Reply sticker with caption *${prefix + command}*`)
                 
                 let media = await client.downloadAndSaveMediaMessage(qmsg)
                 let webpToMp4 = await webp2mp4File(media)
