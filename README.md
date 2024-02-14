@@ -41,7 +41,7 @@ You will need an openai API key for AI features to work.
 <a href="https://github.com/drexmose/deploy-drex-ai/fork" target="blank"><img align="center" src="https://telegra.ph/file/f64c1414969e1beda8f48.jpg" alt="Deploy bot" height="112" width="310" /></a>
   <div>
 <br>
-<a href=`https://dashboard.heroku.com/new-app?template=https://github.com/{GitHubUsername}/drex-ai`
+<a href="`https://dashboard.heroku.com/new-app?template=https://github.com/{GitHubUsername}/drex-ai`"
 " target="blank"><img align="center" src="https://i.imgur.com/6rs61MY.png" alt="Deploy bot" height="112" width="310" /></a>
   <div>
 <br>
