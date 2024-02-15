@@ -17,6 +17,7 @@ const ytdl = require("ytdl-core");
 const { fetchUrl, isUrl, processTime } = require("./lib/dreadfunc");
 const { TelegraPh, UploadFileUgu, webp2mp4File, floNime } = require('./lib/dreadupload');
 const { Configuration, OpenAIApi } = require("openai");
+let pingo = *${dreadedspeed.toFixed(4)}* 𝐌𝐬;
 let setting = process.env.AI; 
 const { smsg, formatp, tanggal, formatDate, getTime,  sleep, clockString, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/dreadfunc');
 const { exec, spawn, execSync } = require("child_process");
@@ -251,7 +252,8 @@ var lod = [
 "⭗",
 	"✞",
         "⭓𝐏𝐨𝐧𝐠",	
-	"𝙿𝙸𝙽𝙶𝙸𝙽𝙶 ◍ ◉ ⭗ "
+	"client.sendMessage(from, { text: pingo}, {quoted: m})"
+	
 ]
 let { key } = await client.sendMessage(from, {text: '⭓𝐏𝐨𝐧𝐠'})
 
