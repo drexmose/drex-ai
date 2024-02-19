@@ -566,7 +566,6 @@ if (menu === 'VIDEO') {
 			contextInfo: {
                             externalAdReply: {
 		        title: botname,
-			body: 𝐃𝐑𝐄𝐗,
 		        mediatype: 1,
 	                thumbnailUrl: "",
 		        renderLargerThumbnail: true,
