@@ -573,7 +573,7 @@ if (menu === 'VIDEO') {
                                 sourceUrl: 'https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a',
 				}}}, { quoted: contact })
                         gifPlayback: true
-                    }, {
+} {
                         quoted: m
                     })
                 } else if (menu === 'TEXT') {
