@@ -575,7 +575,7 @@ if (menu === 'VIDEO') {
                         gifPlayback: true
 } {
                         quoted: m
-                    })
+}
                 } else if (menu === 'TEXT') {
 client.sendMessage(from, { text: cap}, {quoted: m})
 
