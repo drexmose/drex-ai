@@ -571,7 +571,7 @@ if (menu === 'VIDEO') {
 		        renderLargerThumbnail: true,
                         sourceUrl: 'https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a',
 		        gifplayback: true
-	            }, {
+	            }, 
                          quoted: m
                     })	
                 } else if (menu === 'TEXT') {
