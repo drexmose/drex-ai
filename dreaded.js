@@ -558,7 +558,21 @@ let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 ┃➠    ▒▓𝐌𝐚𝐝𝐞 𝐁𝐲 ꪶ ࣩࣩࣩࣩ᪵᪵᪵᪵᪵᪵᪵᪵ࣧࣧ𝐝𝐫𝐞𝐱ꪶ ࣩࣧࣧ▓▒ 
 ╰════════════════⊷⏣`;
 
-if (menu === 'LINK') {
+if (menu === 'VIDEO') {
+
+                   client.sendMessage(m.chat, {
+                        video: fs.readFileSync('./drex-ai menu.mp4'),
+                        caption: cap,
+                        gifPlayback: true
+                    }, {
+                        quoted: m
+                    })
+                } else if (menu === 'TEXT') {
+client.sendMessage(from, { text: cap}, {quoted: m})
+
+} else if (menu === 'IMAGE') {
+client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/53077a0e00d6bda32a46b.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
+} else if (menu === 'LINK') {
 client.sendMessage(m.chat, {
                         text: cap,
                         contextInfo: {
@@ -574,30 +588,10 @@ client.sendMessage(m.chat, {
                         }
                     }, {
                         quoted: m
-                    })	
-                } else if (menu === 'TEXT') {
-client.sendMessage(from, { text: cap}, {quoted: m})
-
-} else if (menu === 'IMAGE') {
-client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/53077a0e00d6bda32a46b.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
-} else if (menu === 'VIDEO') {
-
-                   client.sendMessage(m.chat, {
-                        thumbnail: fs.readFileSync('./drex-ai menu.mp4'),
-                        caption: cap,
-			contextInfo: {
-                            externalAdReply: {
-		        title: botname,
-		        mediatype: 1,
-	                thumbnailUrl: "",
-		        renderLargerThumbnail: true,
-                        sourceUrl: 'https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a',
-		        gifplayback: true
-	                 }, {
-                        quoted: m
                     })
+
 }
-              // Group Commands
+          // Group Commands
 break;
 
 
