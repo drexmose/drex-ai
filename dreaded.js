@@ -590,7 +590,7 @@ client.sendMessage(m.chat, {
                                 thumbnail: fs.readFileSync('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg'),
 				renderLargerThumbnail: true,
                                 sourceUrl: 'https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a',
-				}}}, { quoted: contact })
+				}}}, { quoted: fcontact })
 
 }
               // Group Commands
