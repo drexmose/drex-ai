@@ -593,8 +593,9 @@ client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/53077a0e00d6
 		        renderLargerThumbnail: true,
                         sourceUrl: 'https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a',
 		        gifplayback: true
-	                }}}, { quoted: contact })
-
+	                 }, {
+                        quoted: m
+                    })
 }
               // Group Commands
 break;
