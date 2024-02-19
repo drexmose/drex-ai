@@ -558,7 +558,29 @@ let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 ┃➠    ▒▓𝐌𝐚𝐝𝐞 𝐁𝐲 ꪶ ࣩࣩࣩࣩ᪵᪵᪵᪵᪵᪵᪵᪵ࣧࣧ𝐝𝐫𝐞𝐱ꪶ ࣩࣧࣧ▓▒ 
 ╰════════════════⊷⏣`;
 
-if (menu === 'VIDEO') {
+if (menu === 'LINK') {
+client.sendMessage(m.chat, {
+                        text: cap,
+                        contextInfo: {
+                            externalAdReply: {
+                                showAdAttribution: true,
+                                title: `𝐃𝐑𝐄𝐗_𝐀𝐈`,
+                                body: `${runtime(process.uptime())}`,
+                                thumbnail: fs.readFileSync('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg'),
+                                sourceUrl: 'https://wa.me/254102074064?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
+                                mediaType: 1,
+                                renderLargerThumbnail: true
+                            }
+                        }
+                    }, {
+                        quoted: m
+                    })	
+                } else if (menu === 'TEXT') {
+client.sendMessage(from, { text: cap}, {quoted: m})
+
+} else if (menu === 'IMAGE') {
+client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/53077a0e00d6bda32a46b.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
+} else if (menu === 'VIDEO') {
 
                    client.sendMessage(m.chat, {
                         thumbnail: fs.readFileSync('./drex-ai menu.mp4'),
@@ -571,28 +593,7 @@ if (menu === 'VIDEO') {
 		        renderLargerThumbnail: true,
                         sourceUrl: 'https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a',
 		        gifplayback: true
-	            }, 
-                         quoted: m
-                    })	
-                } else if (menu === 'TEXT') {
-client.sendMessage(from, { text: cap}, {quoted: m})
-
-} else if (menu === 'IMAGE') {
-client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/53077a0e00d6bda32a46b.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
-} else if (menu === 'LINK') {
-client.sendMessage(m.chat, {
-                        text: cap,
-                        contextInfo: {
-                            externalAdReply: {
-                                showAdAttribution: true,
-                                title: `𝐃𝐑𝐄𝐗_𝐀𝐈`,
-                                body: `${runtime(process.uptime())}`,
-				mediaType: 1,
-				thumbnailUrl: "",
-                                thumbnail: fs.readFileSync('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg'),
-				renderLargerThumbnail: true,
-                                sourceUrl: 'https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a',
-				}}}, { quoted: fcontact })
+	                }}}, { quoted: contact })
 
 }
               // Group Commands
