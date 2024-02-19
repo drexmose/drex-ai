@@ -580,15 +580,12 @@ client.sendMessage(m.chat, {
                                 showAdAttribution: true,
                                 title: `𝐃𝐑𝐄𝐗_𝐀𝐈`,
                                 body: `${runtime(process.uptime())}`,
+				mediaType: 1,
+				thumbnailUrl: "",
                                 thumbnail: fs.readFileSync('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg'),
-                                sourceUrl: 'https://wa.me/254102074064?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
-                                mediaType: 1,
-                                renderLargerThumbnail: true
-                            }
-                        }
-                    }, {
-                        quoted: m
-                    })
+				renderLargerThumbnail: true,
+                                sourceUrl: 'https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a',
+				}}}, { quoted: contact })
 
 }
           // Group Commands
