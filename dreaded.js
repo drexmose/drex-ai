@@ -587,8 +587,8 @@ client.sendMessage(m.chat, {
                                 sourceUrl: 'https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a',
 				}}}, { quoted: contact })
 
-
-          // Group Commands
+}
+              // Group Commands
 break;
 
 
