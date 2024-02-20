@@ -584,7 +584,7 @@ client.sendMessage(m.chat, {
                         text: cap,
                         contextInfo: {
                             externalAdReply: {
-                                showAdAttribution: :true,
+                                showAdAttribution: true,
                                 title: `𝐃𝐑𝐄𝐗_𝐀𝐈`,
                                 body: `${runtime(process.uptime())}`,
                                 thumbnail: fs.readFileSync('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg'),
