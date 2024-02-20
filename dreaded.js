@@ -83,6 +83,7 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     const author = process.env.STICKER_AUTHOR ||'𝐃𝐑𝐄𝐗_𝐀𝐈';
     const packname = process.env.STICKER_PACKNAME || 'Drex';
 const dev = process.env.DEV || '254102074064'
+const isCreator = [botNumber, ...global.Owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)  
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
@@ -604,7 +605,7 @@ break;
 	     case 'add': {
         if (!m.isGroup) return reply(mess.grouponly);
         if (!isBotAdmin) return reply(mess.botadmin);
-        if (!owner) return reply(mess.botowner)
+        if (!iscreator) return reply(mess.botowner)
         client.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
 
