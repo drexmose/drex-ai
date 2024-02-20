@@ -562,7 +562,13 @@ if (menu === 'VIDEO') {
 
                    client.sendMessage(m.chat, {
                         thumbnail: fs.readFileSync('./drex-ai menu.mp4'),
+			contextInfo:{ externalAdReply: {
+                        title: botname,
+                        body: `𝐃𝐑𝐄𝐗 𝐁𝐎𝐓`,
                         caption: cap,
+			thumbnail: thum,
+			mediaType: 1,
+			thumnailUrl: "",
                         gifPlayback: true,
                         sourceUrl: `https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a`,
 	                }, { quoted: fcontact })
