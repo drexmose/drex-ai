@@ -601,6 +601,19 @@ console.log(advice());
 
 break;
 
+	     case 'add': {
+        if (!m.isGroup) return reply(mess.grouponly);
+        if (!isBotAdmins) return reply(mess.botadmin);
+        if (!isCreator) return reply(mess.botowner)
+        client.sendMessage(from, { react: { text: "🫡", key: m.key } })
+
+
+        let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+        if (users.length == 0) return reply(`Please write the number of the person you want to add to this group`)
+        await client.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(`User Added Successfully!`)).catch((err) => reply(`Cannot add that user to this group!`))
+      }
+        break;
+
 	     case 'attps':
                 if (!q) return reply('Where Is The Text');
                 
@@ -650,7 +663,7 @@ resultPromise
 reply(resultt.stdout);
 reply(resultt.stderr);
     })
-    .catch(err => {
+    .catch(errors => {
         console.log(resultt.stderr);
 reply(resultt.stderr)
     });
