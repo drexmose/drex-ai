@@ -561,7 +561,7 @@ let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 
 if (menu === 'VIDEO') {
 
-                   client.sendMessage(m.chat, { thumbnail: fs.readFileSync('./drex-ai menu.mp4'),
+                   client.sendMessage(m.chat, { thumbnail: 'https://telegra.ph/file/99be0669e24e037b59a47.mp4',
                         contextInfo:{ externalAdReply: {
                         title: botname,
                         body: `𝐃𝐑𝐄𝐗 𝐁𝐎𝐓`,
@@ -652,7 +652,7 @@ break;
 			const { remini } = require('./lib/remini')
 			let media = await quoted.download()
 			let proses = await remini(media, "enhance")
-			client.sendMessage(m.chat, { image: proses, caption: 'what the fuck'}, { quoted: m})
+			client.sendMessage(m.chat, { image: proses, caption: 'what the fuck'}, { quoted: fcontact})
 			}
 			break;		      
 
@@ -1933,7 +1933,7 @@ case "ping": case "speed": {
 
 	await loadings ()
 m.reply (`⭓𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`);
-         } 
+   } 
  break; 
   
  case "runtime": { 
