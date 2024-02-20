@@ -561,9 +561,8 @@ let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 
 if (menu === 'VIDEO') {
 
-                   client.sendMessage(m.chat, {
-                        thumbnail: fs.readFileSync('./drex-ai menu.mp4'),
-			contextInfo:{ externalAdReply: {
+                   client.sendMessage(m.chat, { thumbnail: fs.readFileSync('./drex-ai menu.mp4'),
+                        contextInfo:{ externalAdReply: {
                         title: botname,
                         body: `𝐃𝐑𝐄𝐗 𝐁𝐎𝐓`,
                         caption: cap,
