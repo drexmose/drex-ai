@@ -603,8 +603,8 @@ break;
 
 	     case 'add': {
         if (!m.isGroup) return reply(mess.grouponly);
-        if (!isBotAdmins) return reply(mess.botadmin);
-        if (!isCreator) return reply(mess.botowner)
+        if (!isBotAdmin) return reply(mess.botadmin);
+        if (!owner) return reply(mess.botowner)
         client.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
 
