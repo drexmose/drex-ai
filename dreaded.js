@@ -565,7 +565,7 @@ if (menu === 'VIDEO') {
                         caption: cap,
                         gifPlayback: true,
                         sourceUrl: `https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a`,
-	                }, { quoted: contact })
+	                }, { quoted: fcontact })
 
 
                 } else if (menu === 'TEXT') {
