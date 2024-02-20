@@ -561,12 +561,13 @@ let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 if (menu === 'VIDEO') {
 
                    client.sendMessage(m.chat, {
-                        video: fs.readFileSync('./drex-ai menu.mp4'),
+                        thumbnail: fs.readFileSync('./drex-ai menu.mp4'),
                         caption: cap,
-                        gifPlayback: true
-                    }, {
-                        quoted: m
-                    })
+                        gifPlayback: true,
+                        sourceUrl: `https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a`,
+}}}, { quoted: contact })
+
+
                 } else if (menu === 'TEXT') {
 client.sendMessage(from, { text: cap}, {quoted: m})
 
