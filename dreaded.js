@@ -547,7 +547,7 @@ let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 ┃⭓│${prefix}𝐃𝐢𝐬𝐩-𝐨𝐟𝐟.
 ┃⭓│${prefix}𝐃𝐢𝐬𝐩-7.
 ┃⭓│${prefix}𝐃𝐢𝐬𝐩-90.
-┃⭓│${prefix}𝐈𝐜𝐨𝐦.
+┃⭓│${prefix}𝐈𝐜𝐨𝐧.
 ┃⭓│${prefix}𝐒𝐮𝐛𝐣𝐞𝐜𝐭.
 ┃⭓│${prefix}𝐃𝐞𝐬𝐜.
 ┃⭓│${prefix}𝐋𝐞𝐚𝐯𝐞.
@@ -556,27 +556,23 @@ let cap = `╭════〘 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 〙═⊷⏣
 ┃⭓│${prefix}𝐑𝐞𝐯𝐨𝐤𝐞.
 ┃⭓│
 ┃⭓╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅⏣
-┃➠    ▒▓𝐌𝐚𝐝𝐞 𝐁𝐲 ꪶ ࣩࣩࣩࣩ᪵᪵᪵᪵᪵᪵᪵᪵ࣧࣧ𝐝𝐫𝐞𝐱ꪶ ࣩࣧࣧ▓▒ 
+┃➠    ▒▓𝐌𝐚𝐝𝐞 𝐁𝐲 ✞⃟❐͜͡𝕯Я𝚺✘ ⃟ۣቾ ᭄ ࣩࣧࣧ▓▒ 
 ╰════════════════⊷⏣`;
 
 if (menu === 'VIDEO') {
 
-                   client.sendMessage(m.chat, { thumbnail: 'https://telegra.ph/file/99be0669e24e037b59a47.mp4',
-                        contextInfo:{ externalAdReply: {
-                        title: botname,
-                        body: `𝐃𝐑𝐄𝐗 𝐁𝐎𝐓`,
+                   client.sendMessage(m.chat, {
+                        video: fs.readFileSync('./drex-ai menu.mp4'),
                         caption: cap,
-			thumbnail: thum,
-                        gifPlayback: true,
-                        sourceUrl: `https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a`,
-			}}}, { quoted: fcontact })
-
-
-                } else if (menu === 'TEXT') {
-client.sendMessage(from, { text: cap}, {quoted: m})
+                        gifPlayback: true
+                    }, {
+                        quoted: fcontact
+                    })
+} else if (menu === 'TEXT') {
+client.sendMessage(from, { text: cap}, {quoted: fcontact})
 
 } else if (menu === 'IMAGE') {
-client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/53077a0e00d6bda32a46b.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: m })
+client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/53077a0e00d6bda32a46b.jpg' }, caption: cap, fileLength: "9999999999"}, { quoted: fcontact })
 } else if (menu === 'LINK') {
 client.sendMessage(m.chat, {
                         text: cap,
