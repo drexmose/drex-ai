@@ -567,8 +567,6 @@ if (menu === 'VIDEO') {
                         body: `𝐃𝐑𝐄𝐗 𝐁𝐎𝐓`,
                         caption: cap,
 			thumbnail: thum,
-	                mediaType: 1,
-			thumnailUrl: "",
                         gifPlayback: true,
                         sourceUrl: `https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a`,
 			}}}, { quoted: fcontact })
