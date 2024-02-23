@@ -696,7 +696,7 @@ case 'playa': {
  let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
  console.log("Audio downloaded ! \n Size: " + fileSizeInMegabytes);
  if (fileSizeInMegabytes <= 40
-{
+
          await client.sendmessage(
 from, {
 audio:
