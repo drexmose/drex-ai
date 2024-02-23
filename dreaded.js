@@ -602,6 +602,16 @@ console.log(advice());
 
 break;
 
+case "p": case "s": {
+
+	await loadings()
+	m.reply(`Testing speed...`)
+	m.reply(`Pinging...`)
+	m.reply(`⭓𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`);
+} 
+break;
+		      
+
 	     case 'add': {
         if (!m.isGroup) return reply(mess.grouponly);
         if (!isBotAdmin) return reply(mess.botadmin);
