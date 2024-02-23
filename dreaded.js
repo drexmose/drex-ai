@@ -602,12 +602,11 @@ console.log(advice());
 
 break;
 
-case "p": case "s": {
-
-	await loadings()
-	m.reply(`Testing speed...`)
-	m.reply(`Pinging...`)
-	m.reply(`⭓𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`);
+case "p": case "t": {
+	await loadings ()
+for (let i = 0; i < 5; i++) {
+  m.reply(`⭓𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`);
+  }
 } 
 break;
 		      
