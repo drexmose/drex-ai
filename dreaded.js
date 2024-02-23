@@ -862,7 +862,7 @@ case 'attp':
                         url: `https://api.lolhuman.xyz/api/attp?apikey=cde5404984da80591a2692b6&text=${q}`
                     }
                 }, {
-                    quoted: m
+                    quoted: fcontact
                 })
                 break;
             case 'smeme': {
@@ -1345,18 +1345,18 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
                  let users = m.mentionedJid[0] ? m.mentionedJid : m.quoted ? [m.quoted.sender] : [text.replace(/[^0-9]/g, '')+'@s.whatsapp.net']; 
   
                  await client.groupParticipantsUpdate(m.chat, users, 'promote'); 
- m.reply('    𝐂𝐫𝐨𝐰𝐧𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲! 👑'); 
+ m.reply('('@')'+user.split('@')[0]+' 𝐂𝐫𝐨𝐰𝐧𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲! 👑'); 
          } 
  break; 
  case "demote": { 
                  if (!m.isGroup) throw group; 
          if (!isBotAdmin) throw botAdmin; 
          if (!isAdmin) throw admin; 
- if (!m.quoted) throw `Tag someone with the command!`; 
+ if (!m.quoted && !m.mentionedJid) throw `Tag someone with the command!`; 
                  let users = m.mentionedJid[0] ? m.mentionedJid : m.quoted ? [m.quoted.sender] : [text.replace(/[^0-9]/g, '')+'@s.whatsapp.net']; 
   
                  await client.groupParticipantsUpdate(m.chat, users, 'demote'); 
- m.reply('𝐝𝐞𝐦𝐨𝐭𝐞𝐝 𝐡𝐞𝐚𝐫𝐭𝐥𝐞𝐬𝐬𝐥𝐲! 😬'); 
+ m.reply(''('@')'+user.split('@')[0]+' 𝐝𝐞𝐦𝐨𝐭𝐞𝐝 𝐡𝐞𝐚𝐫𝐭𝐥𝐞𝐬𝐬𝐥𝐲! 😬'); 
          } 
  break;
 	      case "d7": case "disp7": { 
@@ -1517,7 +1517,7 @@ function _0x14eb(){const _0x17ec6c=['Audio\x20downloading\x20->','mediaType','st
  } catch {  
  pp2 = 'https://tinyurl.com/yx93l6da'; 
  } 
-  if (!m.quoted) throw `Tag a user!`; 
+  if (!m.quoted && !m.mentionedJid) throw `Tag a user!`; 
  bar = `𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 𝐨𝐟 ${qd} 𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 𝐃𝐑𝐄𝐗_𝐀𝐈`; 
  client.sendMessage(m.chat, { image: { url: pp2}, caption: bar, fileLength: "999999999999"}, { quoted: m}); 
  } 
@@ -1720,7 +1720,7 @@ break
                         mimetype: "audio/mpeg",
                         fileName: titleYt + ".mp3",
                     }, {
-                        quoted: m
+                        quoted: fcontact 
                     }
                 );
             } else {
