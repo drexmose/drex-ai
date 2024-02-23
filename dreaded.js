@@ -1355,7 +1355,7 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
  if (!m.quoted && !m.mentionedJid) throw `Tag someone with the command or reply to their message!`; 
  let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'; 
  
- await client.groupMakeAdmin(m.chat, user); 
+ await client.groupParticipantsUpdate(m.chat, user); 
  m.reply('@'+user.split('@')[0]+' 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐩𝐫𝐨𝐦𝐨𝐭𝐞𝐝 𝐭𝐨 𝐀𝐝𝐦𝐢𝐧! 👑'); 
  } 
  break;
