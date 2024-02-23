@@ -1556,25 +1556,7 @@ try {
   }
 break;
 
-	  case "vv": 
- case "view": 
- case "v": { 
- let viewOnceMessage = m.quoted 
- let viewOnceMedia = await client.downloadMediaMessage(viewOnceMessage) 
- let mime = viewOnceMedia.mimetype 
- if (/image/.test(mime)) { 
- let sentView = await client.sendMessage(m.chat, viewOnceMedia, mediaType.image, { viewOnce: true }) 
- m.reply("View once media sent successfully!") 
- } else { 
- m.reply("Only images can be sent as view once media.") 
- } 
- }
- break; 
- default: 
- m.reply("Error: Unable to send view once media. Please make sure to tag a view once message with a vv caption.") 
- break;
- 
-          case "songs": { 
+case "songs": { 
  const getRandom = (ext) => { 
    return `${Math.floor(Math.random() * 10000)}${ext}`; 
  }; 
@@ -2348,7 +2330,7 @@ async function handleGPTMessage(text, m) {
             console.log(error);
             m.reply("An error has occurred:"+ error.message);
 	  break;
-		    {
+		  default: {
           if (cmd && budy.toLowerCase() != undefined) {
             if (m.chat.endsWith("broadcast")) return;
             if (m.isBaileys) return;
