@@ -1341,24 +1341,13 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
                  if (!m.isGroup) throw group; 
          if (!isBotAdmin) throw botAdmin; 
          if (!isAdmin) throw admin; 
- if (!m.quoted) throw `Tag someone with the command!`; 
+ if (!m.quoted && !m.mentionedJid) throw `Tag someone with the command!`; 
                  let users = m.mentionedJid[0] ? m.mentionedJid : m.quoted ? [m.quoted.sender] : [text.replace(/[^0-9]/g, '')+'@s.whatsapp.net']; 
   
                  await client.groupParticipantsUpdate(m.chat, users, 'promote'); 
- m.reply('𝐂𝐫𝐨𝐰𝐧𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲! 👑'); 
+ m.reply(''@'+user.split('@')[0]+' 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐂𝐫𝐨𝐰𝐧𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲! 👑'); 
          } 
  break; 
- case "promotes" : { 
- if (!m.isGroup) throw group; 
- if (!isBotAdmin) throw botAdmin; 
- if (!isAdmin) throw admin; 
- if (!m.quoted && !m.mentionedJid) throw `Tag someone with the command or reply to their message!`; 
- let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'; 
- 
- await client.groupParticipantsUpdate(m.chat, user); 
- m.reply('@'+user.split('@')[0]+' 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐩𝐫𝐨𝐦𝐨𝐭𝐞𝐝 𝐭𝐨 𝐀𝐝𝐦𝐢𝐧! 👑'); 
- } 
- break;
  case "demote": { 
                  if (!m.isGroup) throw group; 
          if (!isBotAdmin) throw botAdmin; 
