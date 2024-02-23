@@ -192,7 +192,7 @@ function _0x11cc() {
         '184473FwtnYZ',
         '18szWhmE',
         'startsWith',
-        '𝐃𝐑𝐄𝐗_𝐀𝐈\x20an',
+        '𝐃𝐑𝐄𝐗 𝐁𝐎𝐓\x20an',
         '376590puyzhN',
         'key'
     ];
@@ -639,7 +639,7 @@ break;
             }
             break;
 
-		      case "vv": 
+ case "vv": 
  case "view": 
  case "v": { 
  let viewOnceMessage = m.quoted 
@@ -651,7 +651,7 @@ break;
  } else { 
  m.reply("Only images can be sent as view once media.") 
  } 
- 
+ }
  break; 
  default: 
  m.reply("Error: Unable to send view once media. Please make sure to tag a view once message with a vv caption.") 
