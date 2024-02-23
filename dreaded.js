@@ -2342,7 +2342,7 @@ async function handleGPTMessage(text, m) {
               // client.sendReadReceipt(m.chat, m.sender, [m.key.id])
               console.log(chalk.black(chalk.bgRed("[ ERROR ]")), color("command", "turquoise"), color(`${prefix}${command}`, "turquoise"), color("Dreaded", "turquoise"));
             }
-          }
+	  }
         }
       }
     }
