@@ -621,32 +621,29 @@ break;
                 client.sendMessage(m.chat, { sticker: { url: `https://api.lolhuman.xyz/api/attp?apikey=cde5404984da80591a2692b6&text=${q}`} }, { quoted: m })
                 break;
 
-	      case "customize": {
+	      case "convert": {
 try {
  if (!m.quoted) return reply('Quote a sticker!')
- let customPackname = args[1] || "Desired pack name";
- let customAuthor = args[2] || "Desired author name";
- 
+ let packname = args[1] || "DefaultPack";
+ let author = args[2] || "DefaultAuthor";
  if (!/webp/.test(mime)) throw `Tag sticker with caption ${prefix + command}`;
  if (m.quoted.isAnimated === true) {
  client.downloadAndSaveMediaMessage(quoted, "gifee");
  client.sendMessage(m.chat, {sticker:fs.readFileSync("gifee.webp")},{quoted:m});
  } else if (/image/.test(mime)) {
  let mediax = await quoted.download();
- let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: customPackname, author: customAuthor });
+ let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: packname, author: author });
  await fs.unlinkSync(encmediax);
-
 } else if (/video/.test(mime)) {
- if ((quoted.msg || quoted).seconds > 11) return m.reply('Not long than 10 seconds!');
+ if ((quoted.msg || quoted).seconds > 11) return m.reply('Not longer than 10 seconds!');
  let mediaxx = await quoted.download();
- let encmediaxx = await client.sendVideoAsSticker(m.chat, mediaxx, m, { packname: customPackname, author: customAuthor });
+ let encmediaxx = await client.sendVideoAsSticker(m.chat, mediaxx, m, { packname: packname, author: author });
  await fs.unlinkSync(encmediaxx)
  } else {
  reply(`Send a sticker with caption ${prefix + command}`);
  }
-
 } catch (errr) { 
- await reply("𝐎𝐨𝐩𝐬😬\n𝐅𝐚𝐥𝐢𝐮𝐫𝐞🗿")}
+ await reply("Error\nFailed to Convert")}
 
  }
 break;
