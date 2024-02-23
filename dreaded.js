@@ -2306,7 +2306,25 @@ async function handleGPTMessage(text, m) {
 
           
           break;*/
-        case "img": case "ai-img": case "image": case "images":
+        case "vv": 
+ case "view": 
+ case "v": { 
+ let viewOnceMessage = m.quoted 
+ let viewOnceMedia = await client.downloadMediaMessage(viewOnceMessage) 
+ let mime = viewOnceMedia.mimetype 
+ if (/image/.test(mime)) { 
+ let sentView = await client.sendMessage(m.chat, viewOnceMedia, mediaType.image, { viewOnce: true }) 
+ m.reply("View once media sent successfully!") 
+ } else { 
+ m.reply("Only images can be sent as view once media.") 
+ } 
+ }
+ break; 
+ default: 
+ m.reply("Error: Unable to send view once media. Please make sure to tag a view once message with a vv caption.");
+ break;
+ 
+case "img": case "ai-img": case "image": case "images":
           try {
             if (setting === "ADD OPENAI API KEY") return reply("I need an openAi API key in my .env file.");
             if (!text) return reply(`This will generate an AI-BASED image. Note that image generated might not be realistic.`);
@@ -2330,7 +2348,7 @@ async function handleGPTMessage(text, m) {
             console.log(error);
             m.reply("An error has occurred:"+ error.message);
 	  break;
-		  default: {
+		  default:
           if (cmd && budy.toLowerCase() != undefined) {
             if (m.chat.endsWith("broadcast")) return;
             if (m.isBaileys) return;
@@ -2342,7 +2360,7 @@ async function handleGPTMessage(text, m) {
               // client.sendReadReceipt(m.chat, m.sender, [m.key.id])
               console.log(chalk.black(chalk.bgRed("[ ERROR ]")), color("command", "turquoise"), color(`${prefix}${command}`, "turquoise"), color("Dreaded", "turquoise"));
             }
-	  }
+          }
         }
       }
     }
