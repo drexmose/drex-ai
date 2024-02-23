@@ -1460,6 +1460,11 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
             client.sendMessage(m.chat, { text : q ? q : '☞︎︎︎ 𝐈 𝐃𝐈𝐃 𝐍𝐎𝐓 𝐓𝐀𝐆 𝐘𝐎𝐔 😬 ☜︎︎︎' , mentions: participants.map(a => a.id)}, { quoted: m }); 
              } 
  break; 
+ case "tag": { 
+ if (!m.isGroup) throw group; 
+ client.sendMessage(m.chat, { text : q ? q : '☞︎︎︎ 𝐈 𝐃𝐈𝐃 𝐍𝐎𝐓 𝐓𝐀𝐆 𝐘𝐎𝐔 😬 ☜︎︎︎' , mentions: participants.map(a => a.id)}, { quoted: m }); 
+ } 
+ break;
  case "tagall": { 
                  if (!m.isGroup) throw group; 
                  if (!isBotAdmin) throw botAdmin; 
