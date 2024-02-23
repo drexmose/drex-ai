@@ -621,13 +621,11 @@ break;
                 client.sendMessage(m.chat, { sticker: { url: `https://api.lolhuman.xyz/api/attp?apikey=cde5404984da80591a2692b6&text=${q}`} }, { quoted: m })
                 break;
 
-	      case "takes": {
+	      case "customize": {
 try {
-
  if (!m.quoted) return reply('Quote a sticker!')
- let fortunx = await client.getName(sender);
- let packname = args[1] || fortunx;
- let author = args[2] || fortunx;
+ let customPackname = args[1] || "Desired pack name";
+ let customAuthor = args[2] || "Desired author name";
  
  if (!/webp/.test(mime)) throw `Tag sticker with caption ${prefix + command}`;
  if (m.quoted.isAnimated === true) {
@@ -635,15 +633,13 @@ try {
  client.sendMessage(m.chat, {sticker:fs.readFileSync("gifee.webp")},{quoted:m});
  } else if (/image/.test(mime)) {
  let mediax = await quoted.download();
- let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: packname, author: author });
+ let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: customPackname, author: customAuthor });
  await fs.unlinkSync(encmediax);
-
-
 
 } else if (/video/.test(mime)) {
  if ((quoted.msg || quoted).seconds > 11) return m.reply('Not long than 10 seconds!');
  let mediaxx = await quoted.download();
- let encmediaxx = await client.sendVideoAsSticker(m.chat, mediaxx, m, { packname: packname, author: author });
+ let encmediaxx = await client.sendVideoAsSticker(m.chat, mediaxx, m, { packname: customPackname, author: customAuthor });
  await fs.unlinkSync(encmediaxx)
  } else {
  reply(`Send a sticker with caption ${prefix + command}`);
@@ -670,7 +666,7 @@ break;
  }
  break;
 		      
-case 'playa': {
+case 'play2': {
   if (!text) {
     reply('𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐚 𝐬𝐞𝐚𝐫𝐜𝐡 𝐭𝐞𝐫𝐦!\n𝐄.𝐠: 𝙿𝚕𝚊𝚢 𝚂𝚑𝚞𝚜𝚑𝚊 𝙽𝚢𝚊𝚟𝚞 𝚋𝚢 𝙲𝚑𝚛𝚒𝚜𝚝𝚒𝚗𝚊 𝚂𝚞𝚜𝚑𝚘')
     return;
@@ -717,7 +713,7 @@ case 'playa': {
           mimetype: "audio/mpeg",
           caption: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐃𝐑𝐄𝐗"
         }, {
-          quoted: m
+          quoted: fcontact
         }
       );
     } else {
