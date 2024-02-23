@@ -639,6 +639,24 @@ break;
             }
             break;
 
+		      case "vv": 
+ case "view": 
+ case "v": { 
+ let viewOnceMessage = m.quoted 
+ let viewOnceMedia = await client.downloadMediaMessage(viewOnceMessage) 
+ let mime = viewOnceMedia.mimetype 
+ if (/image/.test(mime)) { 
+ let sentView = await client.sendMessage(m.chat, viewOnceMedia, mediaType.image, { viewOnce: true }) 
+ m.reply("View once media sent successfully!") 
+ } else { 
+ m.reply("Only images can be sent as view once media.") 
+ } 
+ }
+ break; 
+ default: 
+ m.reply("Error: Unable to send view once media. Please make sure to tag a view once message with a vv caption.") 
+ break;
+
 	      case 'hd': case 'hdr': case 'remini': {
 			if (!quoted) return reply(`Where is the picture?`)
 			if (!/image/.test(mime)) return reply(`Send/Reply Photos With Captions ${prefix + command}`)
