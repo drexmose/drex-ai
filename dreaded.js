@@ -1348,6 +1348,17 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
  m.reply('𝐂𝐫𝐨𝐰𝐧𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲! 👑'); 
          } 
  break; 
+ case "promotes" : { 
+ if (!m.isGroup) throw group; 
+ if (!isBotAdmin) throw botAdmin; 
+ if (!isAdmin) throw admin; 
+ if (!m.quoted && !m.mentionedJid) throw `Tag someone with the command or reply to their message!`; 
+ let user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'; 
+ 
+ await client.groupMakeAdmin(m.chat, user); 
+ m.reply('@'+user.split('@')[0]+' 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐩𝐫𝐨𝐦𝐨𝐭𝐞𝐝 𝐭𝐨 𝐀𝐝𝐦𝐢𝐧! 👑'); 
+ } 
+ break;
  case "demote": { 
                  if (!m.isGroup) throw group; 
          if (!isBotAdmin) throw botAdmin; 
@@ -1457,12 +1468,12 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
              if (!m.isGroup) throw group; 
              if (!isBotAdmin) throw botAdmin; 
              if (!isAdmin) throw admin; 
-            client.sendMessage(m.chat, { text : q ? q : '☞︎︎︎ 𝐈 𝐃𝐈𝐃 𝐍𝐎𝐓 𝐓𝐀𝐆 𝐘𝐎𝐔 😬 ☜︎︎︎' , mentions: participants.map(a => a.id)}, { quoted: m }); 
+            client.sendMessage(m.chat, { text : q ? q : '☞︎︎︎ 𝐈 𝐃𝐈𝐃 𝐍𝐎𝐓 𝐓𝐀𝐆 𝐘𝐎𝐔 😬 ☜︎︎︎' , mentions: participants.map(a => a.id)}, { quoted: fcontact }); 
              } 
  break; 
  case "tag": { 
  if (!m.isGroup) throw group; 
- client.sendMessage(m.chat, { text : q ? q : '☞︎︎︎ 𝐈 𝐃𝐈𝐃 𝐍𝐎𝐓 𝐓𝐀𝐆 𝐘𝐎𝐔 😬 ☜︎︎︎' , mentions: participants.map(a => a.id)}, { quoted: m }); 
+ client.sendMessage(m.chat, { text : q ? q : '☞︎︎︎ 𝐈 𝐃𝐈𝐃 𝐍𝐎𝐓 𝐓𝐀𝐆 𝐘𝐎𝐔 😬 ☜︎︎︎' , mentions: participants.map(a => a.id)}, { quoted: fcontact }); 
  } 
  break;
  case "tagall": { 
@@ -1475,7 +1486,7 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
                  for (let mem of participants) { 
                  teks += `⭓ @${mem.id.split('@')[0]}\n`; 
                  } 
-                 client.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m }); 
+                 client.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: fcontact }); 
                  } 
  break;
  
