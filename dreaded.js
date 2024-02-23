@@ -621,23 +621,39 @@ break;
                 client.sendMessage(m.chat, { sticker: { url: `https://api.lolhuman.xyz/api/attp?apikey=cde5404984da80591a2692b6&text=${q}`} }, { quoted: m })
                 break;
 
-	      case 'takes': case 'swm': {
-                            
-                if (/image/.test(mime)) {
-                    await fs.unlinkSync(encmediax);                    
-	            await fs.unlinkSync(encmedia)
-		    let media = await client.downloadMediaMessage(qmsg)
-                    let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: drex_mose, author: drex-ai });	
-                    } else if (/video/.test(mime)) {
-                    if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 seconds!')
-                    let media = await client.downloadMediaMessage(qmsg)
-                    let encmedia = await client.sendVideoAsSticker(m.chat, media, m, { packname: drex_mose, author: drex-ai })
-                    await fs.unlinkSync(encmedia)
-                } else {
-                    return reply(`Quote a photo/Video with Caption ${prefix + command}\nduration of Video 1-9 seconds`)
-                }
-            }
-            break;
+	      case "takes": {
+try {
+
+ if (!m.quoted) return reply('Quote a sticker!')
+ let fortunx = await client.getName(sender);
+ let packname = args[1] || fortunx;
+ let author = args[2] || fortunx;
+ 
+ if (!/webp/.test(mime)) throw `Tag sticker with caption ${prefix + command}`;
+ if (m.quoted.isAnimated === true) {
+ client.downloadAndSaveMediaMessage(quoted, "gifee");
+ client.sendMessage(m.chat, {sticker:fs.readFileSync("gifee.webp")},{quoted:m});
+ } else if (/image/.test(mime)) {
+ let mediax = await quoted.download();
+ let encmediax = await client.sendImageAsSticker(m.chat, mediax, m, { packname: packname, author: author });
+ await fs.unlinkSync(encmediax);
+
+
+
+} else if (/video/.test(mime)) {
+ if ((quoted.msg || quoted).seconds > 11) return m.reply('Not long than 10 seconds!');
+ let mediaxx = await quoted.download();
+ let encmediaxx = await client.sendVideoAsSticker(m.chat, mediaxx, m, { packname: packname, author: author });
+ await fs.unlinkSync(encmediaxx)
+ } else {
+ reply(`Send a sticker with caption ${prefix + command}`);
+ }
+
+} catch (errr) { 
+ await reply("𝐎𝐨𝐩𝐬😬\n𝐅𝐚𝐥𝐢𝐮𝐫𝐞🗿")}
+
+ }
+break;
 
  case "vv": 
  case "view": 
