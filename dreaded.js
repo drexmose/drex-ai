@@ -2321,59 +2321,6 @@ async function handleGPTMessage(text, m) {
  }
  break; 
  default: 
- m.reply("Error: Unable to send view once media. Please make sure to tag a view once message with a vv caption.");
- break;
- 
-case "img": case "ai-img": case "image": case "images":
-          try {
-            if (setting === "ADD OPENAI API KEY") return reply("I need an openAi API key in my .env file.");
-            if (!text) return reply(`This will generate an AI-BASED image. Note that image generated might not be realistic.`);
-            const configuration = new Configuration({
-              apiKey: setting,
-            });
-            const openai = new OpenAIApi(configuration);
-            const response = await openai.createImage({
-              prompt: text,
-              n: 1,
-              size: "512x512",
-            });
-            //console.log(response.data.data[0].url)
-            client.sendImage(from, response.data.data[0].url, text, mek);
-            } catch (error) {
-          if (error.response) {
-            console.log(error.response.status);
-            console.log(error.response.data);
-            console.log(`${error.response.status}\n\n${error.response.data}`);
-          } else {
-            console.log(error);
-            m.reply("An error has occurred:"+ error.message);
-	  break;
-		  default:
-          if (cmd && budy.toLowerCase() != undefined) {
-            if (m.chat.endsWith("broadcast")) return;
-            if (m.isBaileys) return;
-            if (!budy.toLowerCase()) return;
-            if (argsLog || (cmd && !m.isGroup)) {
-              // client.sendReadReceipt(m.chat, m.sender, [m.key.id])
-              console.log(chalk.black(chalk.bgRed("[ ERROR ]")), color("command", "turquoise"), color(`${prefix}${command}`, "turquoise"), color("Dreaded", "turquoise"));
-            } else if (argsLog || (cmd && m.isGroup)) {
-              // client.sendReadReceipt(m.chat, m.sender, [m.key.id])
-              console.log(chalk.black(chalk.bgRed("[ ERROR ]")), color("command", "turquoise"), color(`${prefix}${command}`, "turquoise"), color("Dreaded", "turquoise"));
-            }
-          }
-        }
-      }
-    }
-  } catch (err) {
-    m.reply(util.format(err));
-  }
-};
-
-let file = require.resolve(__filename);
-fs.watchFile(file, () => {
-  fs.unwatchFile(file);
-  console.log(chalk.redBright(`Update ${__filename}`));
-  delete require.cache[file];
-  require(file);
+ m.reply(("Error: Unable to send view once media. Please make sure to tag a view once message with a vv caption.");
 });
 		  
