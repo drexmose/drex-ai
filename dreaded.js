@@ -2347,7 +2347,7 @@ async function handleGPTMessage(text, m) {
           } else {
             console.log(error);
             m.reply("An error has occurred:"+ error.message);
-          }
+          
         }
 break;
         default: {
