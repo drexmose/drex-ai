@@ -1425,9 +1425,9 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
     client.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.quoted.id, participant: m.quoted.sender } }); 
   } 
  break;
-          case "leav": { 
-                 if (!isAdmin) throw admin; 
- await client.sendText(m.chat,  '𝙵*𝙲𝙺 𝚈𝙾𝚄 𝚂𝙸𝙻𝙻𝚈 𝙰𝙳𝙼𝙸𝙽. 𝙱𝙾𝚃 𝙸𝚂 𝙻𝙴𝙰𝚅𝙸𝙽𝙶 𝙽𝙾𝚆. . .'); 
+	      case "left": case "leave": { 
+                 if (isOwner) throw owner; 
+ await client.sendText(m.chat,  ' 𝙱𝙾𝚃 𝙸𝚂 𝙻𝙴𝙰𝚅𝙸𝙽𝙶 𝙽𝙾𝚆. . .'); 
                  await client.groupLeave(m.chat); 
   
              } 
