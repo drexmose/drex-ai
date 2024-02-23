@@ -651,10 +651,11 @@ break;
  } else { 
  m.reply("Only images can be sent as view once media.") 
  } 
- }
+ 
  break; 
  default: 
  m.reply("Error: Unable to send view once media. Please make sure to tag a view once message with a vv caption.") 
+ }
  break;
 
 	      case 'hd': case 'hdr': case 'remini': {
