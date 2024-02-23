@@ -2348,7 +2348,7 @@ async function handleGPTMessage(text, m) {
             console.log(error);
             m.reply("An error has occurred:"+ error.message);
 	  break;
-		    default: {
+		    {
           if (cmd && budy.toLowerCase() != undefined) {
             if (m.chat.endsWith("broadcast")) return;
             if (m.isBaileys) return;
