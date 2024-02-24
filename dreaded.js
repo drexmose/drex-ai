@@ -596,6 +596,19 @@ client.sendMessage(m.chat, {
           // Group Commands
 break;
 
+        case 'tagadmins': case 'admins': {
+        if (!m.isGroup) return reply(mess.grouponly);
+        client.sendMessage(from, { react: { text: "🗿", key: m.key } })
+        if (!text) return reply(`*Please quote or write a meaningful message to tag admins to*`)
+        let teks = `*「 Tag Admins 」*
+
+*Message : ${text}*\n\n`
+        for (let mem of groupAdmins) {
+          teks += `🍁 @${mem.split('@')[0]}\n`
+        }
+        client.sendMessage(m.chat, { text: teks, mentions: groupAdmins }, { quoted: fcontact })
+      }
+        break;
 
 case "advice":
 reply(advice());
