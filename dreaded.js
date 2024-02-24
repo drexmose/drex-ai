@@ -88,7 +88,6 @@ const menu = process.env.MENU_TYPE || 'VIDEO';
     const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
    const bad = process.env.BAD_WORD || 'fuck';
     const autoread = process.env.AUTOREAD || 'TRUE';
-    const viewOnceMessage = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { url: 'https://example.com/image.jpg', mimetype: 'image/jpeg' } };
     const badword = bad.split(",");
     const thum = fs.readFileSync ('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg');	  
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender);
@@ -306,7 +305,8 @@ await client.sendMessage(from, {text: lod[i], edit: key });
 
   //bug loading
 
-  	
+  const viewOnceMessage = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { url: 'https://example.com/image.jpg', mimetype: 'image/jpeg' } }
+	
 
   // if (!text) return reply("I need more text. For better experience with my inbox AI make longer statements.");
 
