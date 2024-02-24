@@ -658,20 +658,37 @@ try {
  }
 break;
 
- case "vv": 
- case "view": 
- case "v": { 
- let viewOnceMessage = m.quoted 
- let viewOnceMedia = await client.downloadMediaMessage(viewOnceMessage) 
- let mime = viewOnceMedia.mimetype 
- if (/image/.test(mime)) { 
- let sentView = await client.sendMessage(m.chat, viewOnceMedia, mediaType.image, { viewOnce: true }) 
- m.reply("View once media sent successfully!") 
- } else { 
- m.reply("Only images can be sent as view once media.") 
- } 
+ case 'vv': {
+ if (!viewOnceMessage) {
+ reply('Please provide a view once message to extract media from.')
+ return;
  }
- break;
+ try {
+ const { media } = await extractMediaFromViewOnce(viewOnceMessage);
+ if (!media) {
+ reply('No media found in the view once message.')
+ return;
+ }
+ let mediaType = media.type;
+ let fileName = media.fileName || `media.${mediaType}`;
+ let data = media.data;
+ let mimeType = media.mimeType;
+ //sendMedia(from, data, mediaType, fileName, { mimetype: mimeType, caption: 'Media extracted from view once message.' })
+ await client.sendMessage(
+ from, {
+ [mediaType]: data,
+ mimetype: mimeType,
+ fileName: fileName,
+ caption: 'Media extracted from view once message.'
+ }, {
+ quoted: m
+ }
+ );
+ } catch (error) {
+ reply('Error extracting media from view once message.')
+ }
+ }
+break;
 		      
 case 'play2': {
   if (!text) {
