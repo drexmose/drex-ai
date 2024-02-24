@@ -88,8 +88,7 @@ const menu = process.env.MENU_TYPE || 'VIDEO';
     const badwordkick = process.env.BAD_WORD_KICK || 'FALSE';
    const bad = process.env.BAD_WORD || 'fuck';
     const autoread = process.env.AUTOREAD || 'TRUE';
-    const viewOnceMessage = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { url: 'https://example.com/image.jpg', mimetype: 'image/jpeg' } }
-    //const badword = bad.splot(",");    
+    const viewOnceMessage = ({ key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { url: 'https://example.com/image.jpg', mimetype: 'image/jpeg' } });
     const badword = bad.split(",");
     const thum = fs.readFileSync ('./𝐃𝐑𝐄𝐗_𝐀𝐈.jpg');	  
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender);
