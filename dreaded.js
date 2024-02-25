@@ -73,6 +73,7 @@ const antibot = process.env.ANTIBOT || 'FALSE';
        return admins || []; 
      };
    const fatkuns = (m.quoted || m);
+   const groupAdmins = getGroupAdmins(m.participants);
    const quoted = (fatkuns.mtype == 'buttonsMessage') ? fatkuns[Object.keys(fatkuns)[1]] : (fatkuns.mtype == 'templateMessage') ? fatkuns.hydratedTemplate[Object.keys(fatkuns.hydratedTemplate)[1]] : (fatkuns.mtype == 'product') ? fatkuns[Object.keys(fatkuns)[0]] : m.quoted ? m.quoted : m;
     
     const color = (text, color) => {
@@ -603,10 +604,10 @@ break;
         let teks = `*「 Tag Admins 」*
 
 *Message : ${text}*\n\n`
-        for (let mem of getGroupAdmins) {
+        for (let mem of groupAdmins) {
           teks += `🍁 @${mem.split('@')[0]}\n`
         }
-        client.sendMessage(m.chat, { text: teks, mentions: getGroupAdmins }, { quoted: fcontact })
+        client.sendMessage(m.chat, { text: teks, mentions: groupAdmins }, { quoted: fcontact })
       }
         break;
 
@@ -1579,6 +1580,7 @@ await m.reply('𝐑𝐞𝐦𝐨𝐯𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮
  break; 
  case "tag": { 
  if (!m.isGroup) throw group; 
+  if (!Owner) throw `Owner Only` 
  client.sendMessage(m.chat, { text : q ? q : '☞︎︎︎ 𝐈 𝐃𝐈𝐃 𝐍𝐎𝐓 𝐓𝐀𝐆 𝐘𝐎𝐔 😬 ☜︎︎︎' , mentions: participants.map(a => a.id)}, { quoted: fcontact }); 
  } 
  break;
