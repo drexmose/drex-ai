@@ -73,7 +73,6 @@ const antibot = process.env.ANTIBOT || 'FALSE';
        return admins || []; 
      };
    const fatkuns = (m.quoted || m);
-   const groupAdmins = getGroupAdmins(m.participants);
    const quoted = (fatkuns.mtype == 'buttonsMessage') ? fatkuns[Object.keys(fatkuns)[1]] : (fatkuns.mtype == 'templateMessage') ? fatkuns.hydratedTemplate[Object.keys(fatkuns.hydratedTemplate)[1]] : (fatkuns.mtype == 'product') ? fatkuns[Object.keys(fatkuns)[0]] : m.quoted ? m.quoted : m;
     
     const color = (text, color) => {
