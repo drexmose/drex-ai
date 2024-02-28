@@ -1,6 +1,6 @@
 {
-  "name": "drex-ai",
-  "description": "𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼ dark lord",
+  "name": "𝐀𝐑𝐋𝐎𝐃𝐑𝐀𝐆𝐎𝐍",
+  "description": "𝐀𝐑𝐋𝐎𝐃𝐑𝐀𝐆𝐎𝐍",
   "keywords": [
     "bot",
     "whatsapp",
@@ -16,16 +16,16 @@
   ],
   "website": "https://github.com/drexmose/drex-ai#readme",
   "repository": "https://github.com/drexmose/drex-ai.git",
-  "logo": "https://telegra.ph/file/7a47ec78083fc40e5208d.jpg",
+  "logo": "https://telegra.ph/file/3117dcf78eff134392b66.jpg",
   "success_url": "/",
   "env": {
     "PREFIX": {
-      "description": "Prefix of drex ai Ex: . , / , # , & etc. Put any symbol",
+      "description": "Prefix of 𝐀𝐑𝐋𝐎𝐃𝐑𝐀𝐆𝐎𝐍 ai Ex: . , / , # , & etc. Put any symbol",
        "required": true
 
     },
     "DEV": {
-      "description": "Put any phone numbers you want to be bot owner without + or spaces \",\" Ex: 254102074064, 254729553638 ",
+      "description": "Put any phone numbers you want to be bot owner without + or spaces \",\" Ex: 254793057056, 254702713600 ",
       "required": true
     },
     "NOT_OWNER_MSG": {
