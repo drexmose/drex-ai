@@ -1,6 +1,6 @@
 {
   "name": "drex-ai",
-  "description": "𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼ dark lord",
+  "description": "𝐀 𝐦𝐮𝐥𝐭𝐢 𝐝𝐞𝐯𝐢𝐜𝐞 𝐰𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐛𝐨𝐭 𝐜𝐥𝐨𝐧𝐞𝐝 𝐛𝐲 𝐃𝐫𝐞𝐱 𝐌𝐨𝐬𝐞. 𝐓𝐡𝐞 𝐛𝐨𝐭 𝐢𝐬 𝐬𝐭𝐢𝐥𝐥 𝐮𝐧𝐝𝐞𝐫 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭",
   "keywords": [
     "bot",
     "whatsapp",
@@ -16,7 +16,7 @@
   ],
   "website": "https://github.com/drexmose/drex-ai#readme",
   "repository": "https://github.com/drexmose/drex-ai.git",
-  "logo": "https://telegra.ph/file/7a47ec78083fc40e5208d.jpg",
+  "logo": "https://telegra.ph/file/873f7994874e279bd0e55.png",
   "success_url": "/",
   "env": {
     "PREFIX": {
