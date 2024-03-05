@@ -95,8 +95,8 @@ const menu = process.env.MENU_TYPE || 'VIDEO';
     const fcontact = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `𝐃𝐑𝐄𝐗 𝐁𝐎𝐓`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;DrexBot,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': { url: 'https://telegra.ph/file/00c44dbca471eff754425.png' }}}}
        // Group
     const groupMetadata = m.isGroup ? await client.groupMetadata(m.chat).catch((e) => {}) : "";
-    const groupName = m.isGroup ? groupMetadata.subject : "";
-    const participants = m.isGroup ? await groupMetadata.participants : ""; 
+    const groupName = m.isGroup && groupMetadata ? await groupMetadata.subject : "";
+     const participants = m.isGroup && groupMetadata ? await groupMetadata.participants : ""; 
      const groupAdmin = m.isGroup ? await getGroupAdmins(participants) : ""; 
      const isBotAdmin = m.isGroup ? groupAdmin.includes(botNumber) : true; 
      const isAdmin = m.isGroup ? groupAdmin.includes(m.sender) : true;
