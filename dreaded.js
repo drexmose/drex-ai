@@ -265,10 +265,7 @@ await client.sendMessage(from, {text: lod[i], edit: key });
 	   async function loadings () {
 var lod = [
 "⭓",
-"⬬",
-"⭗",
-	"✞",
-        "⭓𝐏𝐨𝐧𝐠",	
+"⬬",	
 	"𝙿𝙸𝙽𝙶𝙸𝙽𝙶 ◍ ◉ ⭗ "
 	
 ]
@@ -281,12 +278,9 @@ await client.sendMessage(from, {text: lod[i], edit: key });
 	  
 	  async function loading () {
 var lod = [
-"🥺",
-"😭",
 "😁",
 "😎",
 "🤬",
-	"❤️",
         "🗿",	
 "⭓𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐛𝐲 𝐝𝐫𝐞𝐱! 😬"
 ]
@@ -602,34 +596,6 @@ for (let i = 0; i < 5; i++) {
   m.reply(`⭓𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`);
   }
 } 
-break;
-
-	 case "take": {
-try {
- if (!m.quoted) return reply('Quote a sticker!')
- let senderName = await client.getName(sender);
- 
- if (!/webp/.test(mime)) throw `Tag sticker with caption ${prefix + command}`;
- if (m.quoted.isAnimated === true) {
- client.downloadAndSaveMediaMessage(quoted, "gifee");
- client.sendMessage(m.chat, {sticker:fs.readFileSync("gifee.webp")},{quoted:m});
- } else if (/image/.test(mime)) {
- let media = await quoted.download();
- let encmedia = await client.sendImageAsSticker(m.chat, media, m, { packname: senderName, author: senderName });
- await fs.unlinkSync(encmedia);
-} else if (/video/.test(mime)) {
- if ((quoted.msg || quoted).seconds > 11) return m.reply('Not longer than 10 seconds!');
- let mediax = await quoted.download();
- let encmediax = await client.sendVideoAsSticker(m.chat, mediax, m, { packname: senderName, author: senderName });
- await fs.unlinkSync(encmediax)
- } else {
- reply(`Send a sticker with caption ${prefix + command}`);
- }
-
-} catch (error) { 
- await reply("Oops😬\nFailed🗿")}
-
- }
 break;
 		      
 case 'play2': {
