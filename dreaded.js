@@ -596,26 +596,6 @@ client.sendMessage(m.chat, {
           // Group Commands
 break;
 
-        case 'tagadmins': case 'admins': {
-        if (!m.isGroup) return reply(mess.grouponly);
-        client.sendMessage(from, { react: { text: "🗿", key: m.key } })
-        if (!text) return reply(`*Please quote or write a meaningful message to tag admins to*`)
-        let teks = `*「 Tag Admins 」*
-
-*Message : ${text}*\n\n`
-        for (let mem of groupAdmins) {
-          teks += `🍁 @${mem.split('@')[0]}\n`
-        }
-        client.sendMessage(m.chat, { text: teks, mentions: groupAdmins }, { quoted: fcontact })
-      }
-        break;
-
-case "advice":
-reply(advice());
-console.log(advice());
-
-break;
-
 case "p": case "t": {
 	await loadings ()
 for (let i = 0; i < 5; i++) {
@@ -623,26 +603,6 @@ for (let i = 0; i < 5; i++) {
   }
 } 
 break;
-		      
-
-	     case 'add': {
-        if (!m.isGroup) return reply(mess.grouponly);
-        if (!isBotAdmin) return reply(mess.botadmin);
-        if (!Owner) return reply(mess.botowner)
-        client.sendMessage(from, { react: { text: "🫡", key: m.key } })
-
-
-        let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-        if (users.length == 0) return reply(`Please write the number of the person you want to add to this group`)
-        await client.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(`User Added Successfully!`)).catch((err) => reply(`Cannot add that user to this group!`))
-      }
-        break;
-
-	     case 'attps':
-                if (!q) return reply('Where Is The Text');
-                
-                client.sendMessage(m.chat, { sticker: { url: `https://api.lolhuman.xyz/api/attp?apikey=cde5404984da80591a2692b6&text=${q}`} }, { quoted: m })
-                break;
 
 	 case "take": {
 try {
@@ -669,38 +629,6 @@ try {
 } catch (error) { 
  await reply("Oops😬\nFailed🗿")}
 
- }
-break;
-
- case 'vv': {
- if (!viewOnceMessage) {
- reply('Please provide a view once message to extract media from.')
- return;
- }
- try {
- const { media } = await extractMediaFromViewOnce(viewOnceMessage);
- if (!media) {
- reply('No media found in the view once message.')
- return;
- }
- let mediaType = media.type;
- let fileName = media.fileName || `media.${mediaType}`;
- let data = media.data;
- let mimeType = media.mimeType;
- //sendMedia(from, data, mediaType, fileName, { mimetype: mimeType, caption: 'Media extracted from view once message.' })
- await client.sendMessage(
- from, {
- [mediaType]: data,
- mimetype: mimeType,
- fileName: fileName,
- caption: 'Media extracted from view once message.'
- }, {
- quoted: m
- }
- );
- } catch (error) {
- reply('Error extracting media from view once message.')
- }
  }
 break;
 		      
@@ -865,10 +793,10 @@ function _0x2de4() {
         '64311OINjak',
         'catch',
         'e\x20text.\x20Th',
-        '\x20of\x20its developer 𝕯⃟𝗮𝗿𝗸_𝗜𝗻𝘁𝗲𝗻𝘁⃟ꦿ⸼',
+        '\x20of\x20Google',
         'is\x20AI\x20work',
         '1832596QZCVhJ',
-        '\x20and\x20Googl',
+        '\x20and\x20Chrom',
         'AgaVJ',
         '6jOniet',
         '𝐃𝐑𝐄𝐗 𝐁𝐎𝐓',
@@ -882,29 +810,8 @@ function _0x2de4() {
     };
     return _0x2de4();
 }
-break;
-
-  case 'say': case 'tts': case 'gtts':{
-if (!text) return reply('Where is the text?')
-            let texttts = text
-            const rl = googleTTS.getAudioUrl(texttts, {
-                lang: "en",
-                slow: false,
-                host: "https://translate.google.com",
-            })
-            return client.sendMessage(m.chat, {
-                audio: {
-                    url: rl,
-                },
-                mimetype: 'audio/mp4',
-                ptt: true,
-                fileName: `${text}.mp3`
-            }, {
-                quoted: m,
-            })
-        }
-        break;
-
+break;	    
+ 
 case "compile-js":
 if (!text && !m.quoted) throw 'Quote/tag a Js code to compile.';
 
