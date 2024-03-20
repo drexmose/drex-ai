@@ -7,7 +7,6 @@ const chalk = require("chalk");
 const speed = require("performance-now");
 const Genius = require("genius-lyrics"); 
 const yts = require("yt-search");
-const scp1 = require('./lib/scrap'); 
 const advice = require("badadvice");
 const {c, cpp, node, python, java} = require('compile-run');
 const acrcloud = require("acrcloud");
@@ -867,13 +866,6 @@ case 'attp':
             
 break;
 
-case 'ss': case 'ssweb': {
-if (!q) return reply(`Example ${prefix+command} link`)
-let krt = await scp1.ssweb(q)
-client.sendMessage(from,{image:krt.result,caption:"Done by Drex"}, {quoted:m})
-}
-break;	
-		      
 case "compile-c":
 
 if (!text && !m.quoted) throw 'Quote/tag a C code to compile';
