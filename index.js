@@ -149,6 +149,7 @@ async function startHisoka() {
   const { state, saveCreds } = await useMultiFileAuthState(`./${sessionName ? sessionName : "dreaded1"}`);
   const { version, isLatest } = await fetchLatestBaileysVersion();
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
+  const resolveMsgBuffer = new NodeCache()
   console.log(
     color(
       figlet.textSync("DREX-AI", {
@@ -169,7 +170,8 @@ async function startHisoka() {
     browser: ['Mac Os', 'chrome', '121.0.6167.159'],
     version: [2, 2413, 1],
     auth: state,
-syncFullHistory: true,
+    syncFullHistory: true,
+    resolveMsgBuffer,
   });
 
 if (autobio === 'TRUE'){ 
