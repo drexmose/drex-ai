@@ -151,9 +151,13 @@ return new Promise((resolve) => {
   });
 };
 
+  return m;
+}
+
  async function startHisoka() {
   const { state, saveCreds } = await useMultiFileAuthState(`./${sessionName ? sessionName : "dreaded1"}`);
   const { version, isLatest } = await fetchLatestBaileysVersion();
+  const resolveMsgBuffer = new NodeCache()
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
   console.log(
     color(
