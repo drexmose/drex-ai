@@ -150,6 +150,7 @@ async function startHisoka() {
   const { state, saveCreds } = await useMultiFileAuthState(`./${sessionName ? sessionName : "dreaded1"}`);
   const { version, isLatest } = await fetchLatestBaileysVersion();
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
+  const resolveMsgBuffer = new NodeCache()
   console.log(
     color(
       figlet.textSync("DREX-AI", {
