@@ -18,7 +18,6 @@ const {
 const pino = require("pino");
 const { Boom } = require("@hapi/boom");
 const fs = require("fs");
-const usePairingCode = global.connect;
 const axios = require("axios");
 const chalk = require("chalk");
 const FileType = require("file-type");
@@ -142,22 +141,13 @@ function smsg(conn, m, store) {
    * @returns
    */
   m.copyNForward = (jid = m.chat, forceForward = false, options = {}) => conn.copyNForward(jid, m, forceForward, options);
-  
-return new Promise((resolve) => {
-    rl.question(color(text, randomcolor), (answer) => {
-      resolve(answer);
-      rl.close();
-    });
-  });
-};
 
   return m;
 }
 
- async function startHisoka() {
+async function startHisoka() {
   const { state, saveCreds } = await useMultiFileAuthState(`./${sessionName ? sessionName : "dreaded1"}`);
   const { version, isLatest } = await fetchLatestBaileysVersion();
-  const resolveMsgBuffer = new NodeCache()
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
   console.log(
     color(
@@ -172,15 +162,11 @@ return new Promise((resolve) => {
   );
 
   const client = dreadedConnect({
-    isLatest,
-    keepAliveIntervalMs: 50000,
-    printQRInTerminal: !usePairingCode,
-    logger: pino({ level: "fatal" }),
+    logger: pino({ level: "silent" }),
+    printQRInTerminal: true,
+    browser: ["CHATGPT - DREADED", "Safari", "5.1.7"],
     auth: state,
-    browser: ['Mac Os', 'chrome', '121.0.6167.159'],
-    version: [2, 2413, 1],
-    generateHighQualityLinkPreview: true,
-    resolveMsgBuffer,
+syncFullHistory: true,
   });
 
 if (autobio === 'TRUE'){ 
