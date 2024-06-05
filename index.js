@@ -18,6 +18,7 @@ const {
 const pino = require("pino");
 const { Boom } = require("@hapi/boom");
 const fs = require("fs");
+const usePairingCode = global.connect;
 const axios = require("axios");
 const chalk = require("chalk");
 const FileType = require("file-type");
