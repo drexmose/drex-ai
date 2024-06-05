@@ -152,7 +152,6 @@ function smsg(conn, m, store) {
       rl.close();
     });
   });
-};
 
 async function startHisoka() {
   const { state, saveCreds } = await useMultiFileAuthState(`./${sessionName ? sessionName : "dreaded1"}`);
