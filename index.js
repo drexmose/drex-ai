@@ -151,9 +151,6 @@ return new Promise((resolve) => {
   });
 };
 
-  return m;
-}
-
  async function startHisoka() {
   const { state, saveCreds } = await useMultiFileAuthState(`./${sessionName ? sessionName : "dreaded1"}`);
   const { version, isLatest } = await fetchLatestBaileysVersion();
