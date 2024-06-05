@@ -162,9 +162,12 @@ async function startHisoka() {
   );
 
   const client = dreadedConnect({
-    logger: pino({ level: "silent" }),
+    isLatest,
+    keepAliveIntervalMs: 50000,
+    logger: pino({ level: "fatal" }),
     printQRInTerminal: true,
-    browser: ["CHATGPT - DREADED", "Safari", "5.1.7"],
+    browser: ['Mac Os', 'chrome', '121.0.6167.159'],
+    version: [2, 2413, 1],
     auth: state,
 syncFullHistory: true,
   });
