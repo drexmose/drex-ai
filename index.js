@@ -27,7 +27,7 @@ const _ = require("lodash");
 const PhoneNumber = require("awesome-phonenumber");
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/dreadexif'); 
  const { isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/dreadfunc');
-const store = makeInMemoryStore({ logger: pino().child({ level: "fatal", stream: "store" }) });
+const store = makeInMemoryStore({ logger: pino().child({ level: "silent", stream: "store" }) });
 
     const autoviewstatus = process.env.AUTOVIEW_STATUS || 'TRUE';
 const welcome = process.env.WELCOME || 'TRUE';
@@ -151,7 +151,7 @@ async function startHisoka() {
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
   console.log(
     color(
-      figlet.textSync("DREX-AI", {
+      figlet.textSync("DREX-BOT", {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
@@ -162,15 +162,12 @@ async function startHisoka() {
   );
 
   const client = dreadedConnect({
-    isLatest,
-    keepAliveIntervalMs: 50000,
-    logger: pino({ level: "fatal" }),
+    logger: pino({ level: "silent" }),
     printQRInTerminal: true,
-    browser: ['Mac Os', 'chrome', '121.0.6167.159'],
-    version: [2, 2413, 1],
+    browser: ["CHATGPT - DREADED", "Safari", "5.1.7"],
     auth: state,
-    syncFullHistory: true,
-    });
+syncFullHistory: true,
+  });
 
 if (autobio === 'TRUE'){ 
             setInterval(() => { 
