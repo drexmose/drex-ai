@@ -1,7 +1,7 @@
 const sessionName = "dreaded1";
 const antiforeign = process.env.ANTIFOREIGN || 'FALSE';
 const autobio = process.env.AUTOBIO || 'TRUE';
-let botname = process.env.BOTNAME || '𝐃𝐑𝐄𝐗_𝐀𝐈';
+let botname = process.env.BOTNAME || '𝐃𝐑𝐄𝐗 𝐁𝐎𝐓';
 
 const owner = process.env.DEV || '254102074064'; // This will send a notification once the bot reconnects
 const {
@@ -27,7 +27,7 @@ const _ = require("lodash");
 const PhoneNumber = require("awesome-phonenumber");
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/dreadexif'); 
  const { isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/dreadfunc');
-const store = makeInMemoryStore({ logger: pino().child({ level: "silent", stream: "store" }) });
+const store = makeInMemoryStore({ logger: pino().child({ level: "fatal", stream: "store" }) });
 
     const autoviewstatus = process.env.AUTOVIEW_STATUS || 'TRUE';
 const welcome = process.env.WELCOME || 'TRUE';
@@ -162,9 +162,10 @@ async function startHisoka() {
   );
 
   const client = dreadedConnect({
-    logger: pino({ level: "silent" }),
+    logger: pino({ level: "fatal" }),
     printQRInTerminal: true,
-    browser: ["CHATGPT - DREADED", "Safari", "5.1.7"],
+    browser: ['Mac Os', 'chrome', '121.0.6167.159'],
+    version: [2, 2413, 1],
     auth: state,
 syncFullHistory: true,
   });
