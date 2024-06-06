@@ -1501,7 +1501,7 @@ function _0x14eb(){const _0x17ec6c=['Audio\x20downloading\x20->','mediaType','st
  pp2 = 'https://tinyurl.com/yx93l6da'; 
  } 
   if (!m.quoted && !m.mentionedJid) throw `Tag a user!`; 
- bar = `𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 of ${qd} 𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 𝐃𝐑𝐄𝐗_𝐀𝐈`; 
+ bar = `𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞 of ${qd} 𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 𝐃𝐑𝐄𝐗 𝐁𝐎𝐓`; 
  client.sendMessage(m.chat, { image: { url: pp2}, caption: bar, fileLength: "999999999999"}, { quoted: fcontact}); 
  } 
  break;
@@ -1941,10 +1941,25 @@ m.reply (`⭓𝐏𝐨𝐧𝐠\n *${dreadedspeed.toFixed(4)}* 𝐌𝐬`);
    } 
  break; 
   
- case "runtime": { 
-                 client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/a91218a98b91ec37fac81.mp4' }, caption: `𝐃𝐑𝐄𝐗_𝐀𝐈 𝙷𝚊𝚜 𝙱𝚎𝚎𝚗 𝙰𝚌𝚝𝚒𝚟𝚎 𝙵𝚘𝚛 ${runtime(process.uptime())}`,gifPlayback: true }, { quoted: m }); 
- } 
- break;
+ case 'runtime':
+		let drex = `𝐃𝐫𝐞𝐱 𝐁𝐨𝐭 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐮𝐧𝐧𝐢𝐧𝐠 𝐟𝐨𝐫 ${runtime(process.uptime())}`
+                client.sendMessage(m.chat, {
+                    text: drex,
+                    contextInfo: {
+                        externalAdReply: {
+                            showAdAttribution: true,
+                            title: '𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 𝚳𝐃',
+                            body: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
+                            thumbnailUrl: 'https://telegra.ph/file/7cf3c490a482f0ae79e02.jpg',
+                            sourceUrl: 'https://chat.whatsapp.com/LqYfmGAmfbnHhtSWSsXP1v',
+                            mediaType: 1,
+                            renderLargerThumbnail: true
+                        }
+                    }
+                }, {
+                    quoted: m
+                })
+                break;
 
 case "alive": { 
   
