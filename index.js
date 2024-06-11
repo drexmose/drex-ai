@@ -1,7 +1,7 @@
 const sessionName = "dreaded1";
 const antiforeign = process.env.ANTIFOREIGN || 'FALSE';
 const autobio = process.env.AUTOBIO || 'TRUE';
-let botname = process.env.BOTNAME || '𝐃𝐑𝐄𝐗 𝐁𝐎𝐓';
+let botname = process.env.BOTNAME || '𝐃𝐑𝐄𝐗_𝐀𝐈';
 
 const owner = process.env.DEV || '254102074064'; // This will send a notification once the bot reconnects
 const {
@@ -151,7 +151,7 @@ async function startHisoka() {
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
   console.log(
     color(
-      figlet.textSync("DREX-BOT", {
+      figlet.textSync("DREX-AI", {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
@@ -162,10 +162,9 @@ async function startHisoka() {
   );
 
   const client = dreadedConnect({
-    logger: pino({ level: "fatal" }),
+    logger: pino({ level: "silent" }),
     printQRInTerminal: true,
-    browser: ['Mac Os', 'chrome', '121.0.6167.159'],
-    version: [2, 2413, 1],
+    browser: ["CHATGPT - DREADED", "Safari", "5.1.7"],
     auth: state,
 syncFullHistory: true,
   });
