@@ -495,7 +495,7 @@ await client.relayMessage(target, etc.message, { participant: { jid: target }, m
       header: {
         title: "🩸⃟༑𝐃𝐑𝐄𝐗 𝐁𝐎𝐓🦠",
         hasMediaAttachment: true,
-        ...(await prepareWAMessageMedia({ image: { url: "https://telegra.ph/file/e8c1aee03b13f008ff65d.jpg" } }, { upload: ryozingod.waUploadToServer }))
+        ...(await prepareWAMessageMedia({ image: { url: "https://telegra.ph/file/e8c1aee03b13f008ff65d.jpg" } }, { upload: client.waUploadToServer }))
       },
       body: {
         text: ""
