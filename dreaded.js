@@ -73,6 +73,7 @@ let afk = require("./lib/afk") //afk
     const from = m.chat;
     const reply = m.reply;
     const sender = m.sender;
+    const orgkaya = JSON.parse(fs.readFileSync('./dtbs/premium.json'))
     const kontributor = JSON.parse(fs.readFileSync('./dtbs/owner.json'))
     const isDeveloper = [botNumber, ...kontributor].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
     const isPremium = isDeveloper || isDeveloper || checkPremiumUser(m.sender, orgkaya);
