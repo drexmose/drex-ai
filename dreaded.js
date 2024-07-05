@@ -50,6 +50,16 @@ const gptdm = process.env.GPT_INBOX || 'TRUE';
 //const autobio = process.env.AUTOBIO || 'TRUE';
 const botname = process.env.BOTNAME || 'DREX AI';
 const antibot = process.env.ANTIBOT || 'FALSE';
+
+	  const {
+addPremiumUser,
+getPremiumExpired,
+getPremiumPosition,
+expiredCheck,
+checkPremiumUser,
+getAllPremiumUser,
+} = require('./lib/premiun')
+let afk = require("./lib/afk") //afk
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
     const args = body.trim().split(/ +/).slice(1);
