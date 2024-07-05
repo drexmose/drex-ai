@@ -63,6 +63,7 @@ const antibot = process.env.ANTIBOT || 'FALSE';
     const from = m.chat;
     const reply = m.reply;
     const sender = m.sender;
+    const isDeveloper = [botNumber, ...kontributor, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
     const isPremium = isDeveloper || isDeveloper || checkPremiumUser(m.sender, orgkaya);
     const mek = chatUpdate.messages[0];
     const getGroupAdmins = (participants) => { 
